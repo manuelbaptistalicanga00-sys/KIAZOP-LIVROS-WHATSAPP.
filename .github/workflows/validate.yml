@@ -34,6 +34,16 @@ jobs:
           console.log(`Site structure checks passed; found ${scripts.length} inline script(s).`);
           NODE
           node --check /tmp/kiazop-site.js
+      - name: Validate workflow Code node JavaScript
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const workflow = JSON.parse(fs.readFileSync('n8n/workflows/whatsapp-venda-livros.json', 'utf8'));
+          const code = workflow.nodes.find(node => node.name === 'Preparar resposta')?.parameters?.jsCode;
+          if (!code) throw new Error('Workflow Code node is missing');
+          fs.writeFileSync('/tmp/kiazop-workflow.js', code);
+          NODE
+          node --check /tmp/kiazop-workflow.js
       - name: Validate WhatsApp workflow JSON
         run: |
           node -e "const w=require('./n8n/workflows/whatsapp-venda-livros.json'); if(!Array.isArray(w.nodes)||!w.nodes.length) throw Error('Workflow has no nodes'); if(w.active!==false) throw Error('Starter workflow must remain inactive until configured and tested'); console.log('Workflow JSON valid; workflow intentionally inactive.');"
