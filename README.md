@@ -15,7 +15,7 @@ Loja demonstrativa de livros digitais com frontend estático na Vercel e integra
 
 O frontend e o atendimento são demonstrativos. Os livros/categorias não representam um catálogo comercial real. Ainda não existem checkout, gestão persistente de pedidos, confirmação de pagamento, entrega segura de e-books, reembolsos nem transferência real para um atendente humano. Não anuncies vendas nem entregues ficheiros até esses fluxos estarem implementados e testados.
 
-O código foi preparado no ramo `feat/vercel-whatsapp-cloud-api`. As alterações precisam de passar no GitHub Actions e ser integradas na branch de produção antes de aparecerem no site publicado. Não afirmamos que a conta Vercel ou a conta Meta já estejam configuradas.
+A migração foi integrada em `main` via [Pull Request #1](https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP./pull/1), e as validações do GitHub Actions passaram no pull request. O deployment de produção na Vercel e a configuração da conta Meta ainda precisam de confirmação; não foram adicionadas credenciais ao GitHub.
 
 ## Início rápido
 
