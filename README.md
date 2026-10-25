@@ -14,7 +14,7 @@ Automação inicial de atendimento e catálogo de livros digitais pelo WhatsApp 
 - Guia de instalação no Hostinger EasyPanel.
 
 ## Estado do projeto
-**Starter em configuração — ainda não é uma loja pronta para produção.** É necessário configurar os domínios, credenciais, instância Evolution API, workflow n8n e testes reais. O workflow vem inativo por segurança.
+**Estado atual: demonstração visual + automação inicial. Ainda não está pronta para vender em produção.** A pesquisa e os filtros do catálogo funcionam; os títulos são exemplos. O workflow WhatsApp permanece inativo até configurar domínios, credenciais, catálogo real, pagamentos e testes. O workflow vem inativo por segurança.
 
 ## Estrutura
 - `docker-compose.yml`: n8n + PostgreSQL para ambiente próprio.
