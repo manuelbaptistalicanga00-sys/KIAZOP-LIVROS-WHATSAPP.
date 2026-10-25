@@ -3,6 +3,9 @@
 Automação inicial de atendimento e catálogo de livros digitais pelo WhatsApp usando Evolution API + n8n, preparada para alojamento num VPS Hostinger com EasyPanel.
 
 ## Funcionalidades incluídas
+- Site estático responsivo com identidade visual violeta/roxo, pesquisa de catálogo e filtros por categoria.
+- Metadados para partilha social e cabeçalhos HTTP de segurança na Vercel.
+- Verificações automáticas no GitHub Actions para validar HTML/JavaScript e JSON do workflow.
 - Webhook de entrada para eventos de mensagens da Evolution API.
 - Respostas iniciais para catálogo, categorias, moeda e pedido de atendimento.
 - Categorias: e-books de trading, finanças e investimentos, desenvolvimento pessoal e outros livros digitais.
