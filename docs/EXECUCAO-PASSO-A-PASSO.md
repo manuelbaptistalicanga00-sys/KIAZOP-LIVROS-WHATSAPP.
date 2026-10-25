@@ -12,8 +12,8 @@ Este quadro distingue código preparado de serviços externos efetivamente confi
 - [x] Função de diagnóstico que não revela segredos.
 - [x] Testes automatizados iniciais para handshake e assinatura inválida/válida.
 - [x] Guia de configuração da Cloud API e variáveis Vercel.
-- [ ] Aguardar GitHub Actions passar no ramo de migração.
-- [ ] Rever e integrar o Pull Request na branch de produção.
+- [x] GitHub Actions passou no Pull Request #1 (validações de sintaxe e testes automatizados).
+- [x] Pull Request #1 integrado na branch `main`.
 - [ ] Confirmar deployment novo Ready na Vercel.
 - [ ] Inserir variáveis reais na Vercel (nunca no GitHub).
 - [ ] Validar callback e subscrição `messages` no painel Meta.
@@ -29,7 +29,7 @@ URL informado: https://kiazop-livros-whatsapp.vercel.app/
 3. Abre o site num telemóvel e num computador; testa pesquisa, filtros, navegação e links.
 4. Abre `/api/whatsapp/health`. O estado `configured` indica apenas presença das variáveis obrigatórias; não comprova validade de credenciais ou ligação Meta.
 
-**Estado:** o código foi preparado no GitHub, mas ainda não há confirmação de deployment, nem de variáveis reais no painel Vercel.
+**Estado:** código integrado em `main` e CI do pull request passou. Ainda não há confirmação de deployment na Vercel, nem de variáveis reais no painel Vercel ou da configuração da Meta.
 
 ## Etapa 2 — WhatsApp Cloud API oficial
 
