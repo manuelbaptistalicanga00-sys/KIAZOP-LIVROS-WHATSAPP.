@@ -6,22 +6,21 @@ Este é o quadro de trabalho para levar a loja à produção. Não considerar um
 - [x] Site demonstrativo e pesquisa/filtros no GitHub.
 - [x] Cabeçalhos básicos de segurança e validações automáticas.
 - [x] Workflow inicial do n8n criado e mantido inativo.
-- [ ] Deploy Vercel confirmado por URL público.
+- [x] URL de produção fornecido pelo proprietário: https://kiazop-livros-whatsapp.vercel.app/
+- [x] Última execução do GitHub Actions consultada: sucesso nas validações estáticas.
+- [ ] Teste manual do site publicado em telemóvel e computador; confirmar que a versão publicada corresponde ao último commit.
 - [ ] Evolution API, número WhatsApp e webhook testados.
 - [ ] Catálogo real, capas autorizadas, preços e ficheiros confirmados.
 - [ ] Pagamentos verificados no servidor antes da entrega.
 - [ ] Compra completa testada de ponta a ponta.
 
-## Etapa 1 — Vercel (começar aqui)
-1. Abre https://vercel.com/dashboard.
-2. Localiza o projeto ligado ao repositório KIAZOP-LIVROS-WHATSAPP.
-3. Se não existir, importa o repositório GitHub e escolhe o ramo main.
-4. Define Root Directory como raiz do repositório. É um site estático; não precisa de build command.
-5. Faz Deploy e espera que o deployment mais recente fique Ready.
-6. Abre o endereço .vercel.app e testa o site em telemóvel.
-7. Envia-me o endereço público ou a mensagem de erro do deployment. Não envies passwords, tokens ou chaves.
+## Etapa 1 — Vercel
+1. URL fornecido: https://kiazop-livros-whatsapp.vercel.app/
+2. Abre o endereço num navegador, também em janela privada, e testa pesquisa, filtros, links e visualização em telemóvel.
+3. No painel Vercel, confirma que o deployment mais recente do ramo main está Ready e corresponde ao último commit do GitHub.
+4. Se houver erro, envia o texto ou uma captura do erro, sem segredos.
 
-**Critério de conclusão:** URL público abre e o último deployment aparece como Ready.
+**Estado:** URL recebido e validações do repositório passaram. O acesso HTTP automatizado nesta conversa não confirmou o conteúdo live, por isso o teste visual final continua pendente.
 
 ## Etapa 2 — WhatsApp / Evolution API / n8n
 - [ ] Confirmar que n8n e Evolution API estão ativos no EasyPanel e usam HTTPS.
@@ -71,5 +70,5 @@ Nunca partilhar .env, passwords, API keys, tokens, cookies ou QR codes de sessã
 - Repositório: https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP.
 - Vercel: https://vercel.com/dashboard
 - Testes: https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP./actions
-- Guia Hostinger/EasyPanel: CONFIGURACAO-HOSTINGER-EASYPANEL.md
-- Checklist: CHECKLIST-PUBLICACAO.md
+- Guia Hostinger/EasyPanel: docs/CONFIGURACAO-HOSTINGER-EASYPANEL.md
+- Checklist: docs/CHECKLIST-PUBLICACAO.md
