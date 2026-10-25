@@ -24,6 +24,7 @@ O GitHub Actions foi executado com sucesso na última versão validada. Isto con
 - `n8n/workflows/whatsapp-venda-livros.json`: workflow importável no n8n.
 - `docs/CONFIGURACAO-HOSTINGER-EASYPANEL.md`: guia de implantação.
 - `docs/CHECKLIST-PUBLICACAO.md`: verificações antes de publicar.
+- `docs/PLANO-DE-LANCAMENTO.md`: plano de lançamento, testes finais e bloqueios externos.
 
 ## Início rápido
 1. Cria serviços/domínios para n8n e Evolution API no EasyPanel ou confirma os serviços existentes.
