@@ -1,0 +1,42 @@
+name: Validate KIAZOP Livros
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate site markup and inline JavaScript
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const html = fs.readFileSync('index.html', 'utf8');
+          const required = ['<html', '<head>', '<body', '<title>', 'id="catalogo"', 'id="book-search"', 'id="results-count"'];
+          for (const token of required) {
+            if (!html.includes(token)) throw new Error(`Missing required site element: ${token}`);
+          }
+          const scripts = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/gi)];
+          if (!scripts.length) throw new Error('No inline JavaScript found to validate');
+          fs.writeFileSync('/tmp/kiazop-site.js', scripts.map(match => match[1]).join('\n'));
+          console.log(`Site structure checks passed; found ${scripts.length} inline script(s).`);
+          NODE
+          node --check /tmp/kiazop-site.js
+      - name: Validate WhatsApp workflow JSON
+        run: |
+          node -e "const w=require('./n8n/workflows/whatsapp-venda-livros.json'); if(!Array.isArray(w.nodes)||!w.nodes.length) throw Error('Workflow has no nodes'); if(w.active!==false) throw Error('Starter workflow must remain inactive until configured and tested'); console.log('Workflow JSON valid; workflow intentionally inactive.');"
+      - name: Validate Vercel configuration
+        run: |
+          node -e "const v=require('./vercel.json'); if(v.cleanUrls!==true) throw Error('cleanUrls must be enabled'); if(!Array.isArray(v.headers)||!v.headers.length) throw Error('Security headers are missing'); console.log('Vercel configuration valid.');"
