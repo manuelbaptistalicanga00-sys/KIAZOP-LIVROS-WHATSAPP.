@@ -6,10 +6,10 @@ Loja demonstrativa de livros digitais com frontend estático na Vercel e integra
 
 - Site responsivo com pesquisa e filtros de catálogo.
 - Cabeçalhos de segurança e validações automáticas no GitHub Actions.
-- `GET/POST /api/whatsapp/webhook`: verificação Meta, validação HMAC-SHA256 da assinatura, receção de mensagens de texto e respostas pela Cloud API.
+- `GET/POST /api/whatsapp/webhook`: verificação Meta e validação HMAC-SHA256; pode responder diretamente pela Cloud API ou encaminhar eventos validados para um Webhook genérico do n8n através de `N8N_WEBHOOK_URL` + `N8N_FORWARD_SECRET`.
 - `GET /api/whatsapp/health`: verificação segura da presença das variáveis de ambiente, sem expor segredos.
 - Deduplicação opcional de eventos por 24 horas via Upstash Redis REST.
-- Guia de configuração e testes: [WhatsApp Cloud API + Vercel](docs/CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md).
+- Guia de configuração, incluindo a ponte segura para n8n: [WhatsApp Cloud API + Vercel](docs/CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md).
 
 ## Estado atual — não é ainda uma loja pronta para vendas
 
@@ -24,7 +24,8 @@ A migração foi integrada em `main` via [Pull Request #1](https://github.com/ma
 3. Faz redeploy na Vercel.
 4. No painel Meta, define o callback `https://kiazop-livros-whatsapp.vercel.app/api/whatsapp/webhook`, usa o mesmo verify token e subscreve o campo `messages`.
 5. Testa o handshake, mensagens de texto, assinatura inválida e os logs. Configura Upstash antes de produção para evitar respostas duplicadas em retries.
-6. Confirma que o número/conta está aprovado e que o token é apropriado para produção.
+6. Se quiseres que o n8n faça as automações, configura `N8N_WEBHOOK_URL` e `N8N_FORWARD_SECRET` conforme o guia; usa um Webhook genérico no n8n, não o WhatsApp Trigger independente.
+7. Confirma que o número/conta está aprovado e que o token é apropriado para produção.
 
 ## Variáveis de ambiente
 
