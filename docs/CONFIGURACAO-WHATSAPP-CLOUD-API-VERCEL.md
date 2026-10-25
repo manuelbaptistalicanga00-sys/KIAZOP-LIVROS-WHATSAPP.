@@ -52,7 +52,7 @@ https://kiazop-livros-whatsapp.vercel.app/api/whatsapp/webhook
 2. Cola o Callback URL acima.
 3. Introduz o mesmo valor de `WHATSAPP_VERIFY_TOKEN` configurado na Vercel.
 4. Verifica/guarda. A Meta deve validar o endpoint e receber o `hub.challenge`.
-5. Subscreve o campo/evento `messages) no objeto WhatsApp Business Account.
+5. Subscreve o campo/evento `messages` no objeto WhatsApp Business Account.
 6. Envia uma mensagem de teste de um número autorizado para o número WhatsApp configurado.
 
 O endpoint recusa POST sem assinatura válida. Não desatives a validação de assinatura para “fazer funcionar”.
