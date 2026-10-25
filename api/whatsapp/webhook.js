@@ -79,18 +79,46 @@ function buildReply(text) {
   return 'Olá! 👋 Bem-vindo à KIAZOP Livros.\n\nEscreve CATÁLOGO para ver as categorias, MOEDA para informações sobre AOA/BRL ou ATENDIMENTO para instruções de apoio.';
 }
 
-async function claimMessageOnce(messageId) {
+async function redisCommand(command) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!url || !token) return true; // Optional; configure Upstash to protect against webhook retries.
+  if (!url || !token) return null;
   const response = await fetch(url.replace(/\/$/, ''), {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' },
-    body: JSON.stringify(['SET', 'kiazop:whatsapp:message:' + messageId, '1', 'EX', '86400', 'NX'])
+    body: JSON.stringify(command)
   });
   if (!response.ok) throw new Error('Deduplication store request failed');
-  const result = await response.json();
+  return response.json();
+}
+
+function hasDeduplicationStore() {
+  return Boolean(process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN);
+}
+
+async function claimMessageOnce(messageId) {
+  if (!hasDeduplicationStore()) return true; // Optional; enable Upstash before production.
+  const result = await redisCommand(['SET', 'kiazop:whatsapp:message:' + messageId, 'processing', 'EX', '300', 'NX']);
   return result.result === 'OK';
+}
+
+async function markMessageSent(messageId) {
+  if (!hasDeduplicationStore()) return;
+  // A transient store failure here must not make Meta resend a message already sent.
+  try {
+    await redisCommand(['SET', 'kiazop:whatsapp:message:' + messageId, 'sent', 'EX', '86400']);
+  } catch (error) {
+    console.error('[whatsapp-webhook] Could not persist deduplication status:', error.message);
+  }
+}
+
+async function releaseMessageClaim(messageId) {
+  if (!hasDeduplicationStore()) return;
+  try {
+    await redisCommand(['DEL', 'kiazop:whatsapp:message:' + messageId]);
+  } catch (error) {
+    console.error('[whatsapp-webhook] Could not release message claim:', error.message);
+  }
 }
 
 async function sendWhatsAppText(to, body) {
@@ -134,7 +162,13 @@ async function processWebhook(payload) {
         if (!reply) continue;
         const firstDelivery = await claimMessageOnce(message.id);
         if (!firstDelivery) continue;
-        await sendWhatsAppText(message.from, reply);
+        try {
+          await sendWhatsAppText(message.from, reply);
+          await markMessageSent(message.id);
+        } catch (error) {
+          await releaseMessageClaim(message.id);
+          throw error;
+        }
       }
     }
   }
