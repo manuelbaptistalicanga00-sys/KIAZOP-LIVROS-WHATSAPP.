@@ -60,7 +60,7 @@ test('POST validates signature and acknowledges a valid status-only event', asyn
   const res = responseMock();
   await handler(req, res);
   assert.equal(res.statusCode, 200);
-  assert.deepEqual(JSON.parse(res.body), { received: true });
+  assert.deepEqual(JSON.parse(res.body), { received: true, forwarded: false });
 });
 
 test('POST sends an automatic text reply for an inbound WhatsApp message', async () => {
