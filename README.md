@@ -16,6 +16,8 @@ Automação inicial de atendimento e catálogo de livros digitais pelo WhatsApp 
 ## Estado do projeto
 **Estado atual: demonstração visual + automação inicial. Ainda não está pronta para vender em produção.** A pesquisa e os filtros do catálogo funcionam; os títulos são exemplos. O workflow WhatsApp permanece inativo até configurar domínios, credenciais, catálogo real, pagamentos e testes. O workflow vem inativo por segurança.
 
+O GitHub Actions foi executado com sucesso na última versão validada. Isto confirma verificações estáticas do repositório, não um teste real de deploy, WhatsApp ou pagamentos. Consulta `docs/PLANO-DE-LANCAMENTO.md` para os bloqueios e passos de publicação.
+
 ## Estrutura
 - `docker-compose.yml`: n8n + PostgreSQL para ambiente próprio.
 - `.env.example`: nomes das variáveis necessárias, sem segredos reais.
