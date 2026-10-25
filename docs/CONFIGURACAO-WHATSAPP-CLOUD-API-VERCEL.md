@@ -57,7 +57,20 @@ https://kiazop-livros-whatsapp.vercel.app/api/whatsapp/webhook
 
 O endpoint recusa POST sem assinatura válida. Não desatives a validação de assinatura para “fazer funcionar”.
 
-## 4. Verificar a implantação
+## 4. Opcional: encaminhar os eventos para o n8n
+
+Por defeito, a função Vercel responde diretamente através da WhatsApp Cloud API. Se quiseres usar o n8n para automatizações, configura **ambas** estas variáveis nas Environment Variables da Vercel:
+
+- `N8N_WEBHOOK_URL`: URL HTTPS de um nó **Webhook genérico** do n8n, com método POST e URL de produção.
+- `N8N_FORWARD_SECRET`: segredo aleatório forte partilhado entre a Vercel e o workflow n8n. Guarda o mesmo valor como credencial/variável no n8n e verifica-o no primeiro passo do workflow através do cabeçalho `X-Kiazop-Webhook-Secret`.
+
+Quando `N8N_WEBHOOK_URL` está definido, a Vercel valida a assinatura Meta e encaminha o evento para o n8n. **O n8n passa a ser responsável por responder**; a função Vercel não envia uma segunda resposta automática. Se o n8n falhar, a Vercel devolve erro para permitir a repetição do evento. A URL tem de usar HTTPS.
+
+O workflow ZIP anterior usa um nó **WhatsApp Trigger**, que é um trigger independente e não recebe automaticamente os eventos encaminhados pela Vercel. Para esta arquitetura, cria ou importa um workflow separado com um nó Webhook genérico e valida o segredo antes de processar o corpo. Não atives dois triggers para responder ao mesmo número ao mesmo tempo. Não guardes a URL com tokens embutidos nem o segredo no GitHub.
+
+Depois de configurar as variáveis, faz redeploy da Vercel e testa com uma mensagem de teste. Sem `N8N_WEBHOOK_URL`, o modo direto atual continua a funcionar.
+
+## 5. Verificar a implantação
 
 - Abre `https://kiazop-livros-whatsapp.vercel.app/api/whatsapp/health`. Espera JSON com `status: "configured"` quando as quatro variáveis obrigatórias estão presentes. Este teste não comprova que o token é válido.
 - Na Meta, confirma que a verificação do callback passou e que o campo `messages` está subscrito.
@@ -66,7 +79,7 @@ O endpoint recusa POST sem assinatura válida. Não desatives a validação de a
 - Testa eventos de estado de entrega e mensagens não textuais: o endpoint não deve responder a esses eventos como se fossem mensagens do cliente.
 - Confirma os logs Vercel sem expor tokens, conteúdo das mensagens ou dados pessoais.
 
-## 5. Limites e próximos passos antes de vender
+## 6. Limites e próximos passos antes de vender
 
 - O código responde apenas a mensagens de texto recebidas; não trata imagens, áudio, documentos nem interações de botões.
 - Mensagens iniciadas pela empresa fora da janela de atendimento aplicável podem exigir templates aprovados pela Meta. O starter não envia templates.

@@ -219,8 +219,38 @@ module.exports = async function whatsappWebhook(req, res) {
   }
 
   try {
+    const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL;
+    if (n8nWebhookUrl) {
+      const sharedSecret = process.env.N8N_FORWARD_SECRET;
+      if (!sharedSecret) {
+        return json(res, 503, { error: 'n8n forwarding is enabled but its shared secret is not configured' });
+      }
+      let parsedWebhookUrl;
+      try {
+        parsedWebhookUrl = new URL(n8nWebhookUrl);
+      } catch {
+        return json(res, 503, { error: 'n8n webhook URL is invalid' });
+      }
+      if (parsedWebhookUrl.protocol !== 'https:') {
+        return json(res, 503, { error: 'n8n webhook URL must use HTTPS' });
+      }
+      const forwardResponse = await fetch(parsedWebhookUrl.toString(), {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Kiazop-Webhook-Secret': sharedSecret
+        },
+        body: JSON.stringify(payload)
+      });
+      if (!forwardResponse.ok) {
+        throw new Error('n8n webhook returned HTTP ' + forwardResponse.status);
+      }
+      return json(res, 200, { received: true, forwarded: true });
+    }
+
+    // Direct Cloud API mode is used only when N8N_WEBHOOK_URL is not configured.
     await processWebhook(payload);
-    return json(res, 200, { received: true });
+    return json(res, 200, { received: true, forwarded: false });
   } catch (error) {
     // Log only a generic error; never log message contents, phone numbers, or secrets.
     console.error('[whatsapp-webhook] Processing failed:', error.message);

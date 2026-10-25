@@ -60,7 +60,7 @@ test('POST validates signature and acknowledges a valid status-only event', asyn
   const res = responseMock();
   await handler(req, res);
   assert.equal(res.statusCode, 200);
-  assert.deepEqual(JSON.parse(res.body), { received: true });
+  assert.deepEqual(JSON.parse(res.body), { received: true, forwarded: false });
 });
 
 test('POST sends an automatic text reply for an inbound WhatsApp message', async () => {
@@ -105,5 +105,54 @@ test('POST sends an automatic text reply for an inbound WhatsApp message', async
     global.fetch = originalFetch;
     delete process.env.WHATSAPP_ACCESS_TOKEN;
     delete process.env.WHATSAPP_PHONE_NUMBER_ID;
+  }
+});
+
+
+test('POST forwards verified Meta events to n8n when configured', async () => {
+  process.env.WHATSAPP_APP_SECRET = 'test-app-secret';
+  process.env.N8N_WEBHOOK_URL = 'https://n8n.example.test/webhook/kiazop';
+  process.env.N8N_FORWARD_SECRET = 'test-forward-secret';
+  const payload = { object: 'whatsapp_business_account', entry: [{ changes: [{ field: 'messages', value: { messages: [] } }] }] };
+  const body = JSON.stringify(payload);
+  const signature = 'sha256=' + crypto.createHmac('sha256', process.env.WHATSAPP_APP_SECRET).update(body).digest('hex');
+  const originalFetch = global.fetch;
+  let forwarded;
+  global.fetch = async (url, options) => {
+    forwarded = { url, options };
+    return { ok: true, status: 200 };
+  };
+  try {
+    const req = requestMock('POST', '/api/whatsapp/webhook', body, signature);
+    const res = responseMock();
+    await handler(req, res);
+    assert.equal(res.statusCode, 200);
+    assert.deepEqual(JSON.parse(res.body), { received: true, forwarded: true });
+    assert.equal(forwarded.url, 'https://n8n.example.test/webhook/kiazop');
+    assert.equal(forwarded.options.headers['X-Kiazop-Webhook-Secret'], 'test-forward-secret');
+    assert.deepEqual(JSON.parse(forwarded.options.body), payload);
+  } finally {
+    global.fetch = originalFetch;
+    delete process.env.N8N_WEBHOOK_URL;
+    delete process.env.N8N_FORWARD_SECRET;
+  }
+});
+
+test('POST does not enable n8n forwarding without the shared secret', async () => {
+  process.env.WHATSAPP_APP_SECRET = 'test-app-secret';
+  process.env.N8N_WEBHOOK_URL = 'https://n8n.example.test/webhook/kiazop';
+  delete process.env.N8N_FORWARD_SECRET;
+  const body = JSON.stringify({ object: 'whatsapp_business_account', entry: [] });
+  const signature = 'sha256=' + crypto.createHmac('sha256', process.env.WHATSAPP_APP_SECRET).update(body).digest('hex');
+  const originalFetch = global.fetch;
+  global.fetch = async () => { throw new Error('fetch must not be called'); };
+  try {
+    const req = requestMock('POST', '/api/whatsapp/webhook', body, signature);
+    const res = responseMock();
+    await handler(req, res);
+    assert.equal(res.statusCode, 503);
+  } finally {
+    global.fetch = originalFetch;
+    delete process.env.N8N_WEBHOOK_URL;
   }
 });
