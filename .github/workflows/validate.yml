@@ -34,7 +34,14 @@ jobs:
           console.log(`Site structure checks passed; found ${scripts.length} inline script(s).`);
           NODE
           node --check /tmp/kiazop-site.js
-      - name: Validate workflow Code node JavaScript
+      - name: Validate WhatsApp Cloud API functions
+        run: |
+          node --check api/whatsapp/webhook.js
+          node --check api/whatsapp/health.js
+          node --check tests/whatsapp-webhook.test.js
+      - name: Test WhatsApp webhook verification and signature handling
+        run: node --test tests/whatsapp-webhook.test.js
+      - name: Validate legacy n8n workflow Code node JavaScript
         run: |
           node <<'NODE'
           const fs = require('node:fs');
@@ -44,9 +51,9 @@ jobs:
           fs.writeFileSync('/tmp/kiazop-workflow.js', code);
           NODE
           node --check /tmp/kiazop-workflow.js
-      - name: Validate WhatsApp workflow JSON
+      - name: Validate legacy WhatsApp workflow JSON
         run: |
-          node -e "const w=require('./n8n/workflows/whatsapp-venda-livros.json'); if(!Array.isArray(w.nodes)||!w.nodes.length) throw Error('Workflow has no nodes'); if(w.active!==false) throw Error('Starter workflow must remain inactive until configured and tested'); console.log('Workflow JSON valid; workflow intentionally inactive.');"
+          node -e "const w=require('./n8n/workflows/whatsapp-venda-livros.json'); if(!Array.isArray(w.nodes)||!w.nodes.length) throw Error('Workflow has no nodes'); if(w.active!==false) throw Error('Legacy starter workflow must remain inactive'); console.log('Legacy workflow JSON valid and inactive.');"
       - name: Validate Vercel configuration
         run: |
           node -e "const v=require('./vercel.json'); if(v.cleanUrls!==true) throw Error('cleanUrls must be enabled'); if(!Array.isArray(v.headers)||!v.headers.length) throw Error('Security headers are missing'); console.log('Vercel configuration valid.');"

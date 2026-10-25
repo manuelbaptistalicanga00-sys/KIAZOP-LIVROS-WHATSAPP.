@@ -1,46 +1,52 @@
 # KIAZOP-LIVROS-WHATSAPP
 
-Automação inicial de atendimento e catálogo de livros digitais pelo WhatsApp usando Evolution API + n8n, preparada para alojamento num VPS Hostinger com EasyPanel.
+Loja demonstrativa de livros digitais com frontend estático na Vercel e integração inicial com a **WhatsApp Cloud API oficial da Meta**, através de Vercel Functions. A nova integração não exige VPS, Hostinger, EasyPanel, n8n ou Evolution API.
 
-## Funcionalidades incluídas
-- Site estático responsivo com identidade visual violeta/roxo, pesquisa de catálogo e filtros por categoria.
-- Metadados para partilha social e cabeçalhos HTTP de segurança na Vercel.
-- Verificações automáticas no GitHub Actions para validar HTML/JavaScript e JSON do workflow.
-- Webhook de entrada para eventos de mensagens da Evolution API.
-- Respostas iniciais para catálogo, categorias, moeda e pedido de atendimento.
-- Categorias: e-books de trading, finanças e investimentos, desenvolvimento pessoal e outros livros digitais.
-- Moedas suportadas no atendimento: AOA (kwanza) e BRL (real brasileiro).
-- Exemplo de Docker Compose para n8n e PostgreSQL.
-- Guia de instalação no Hostinger EasyPanel.
+## O que está preparado
 
-## Estado do projeto
-**Estado atual: demonstração visual + automação inicial. Ainda não está pronta para vender em produção.** A pesquisa e os filtros do catálogo funcionam; os títulos são exemplos. O workflow WhatsApp permanece inativo até configurar domínios, credenciais, catálogo real, pagamentos e testes. O workflow vem inativo por segurança.
+- Site responsivo com pesquisa e filtros de catálogo.
+- Cabeçalhos de segurança e validações automáticas no GitHub Actions.
+- `GET/POST /api/whatsapp/webhook`: verificação Meta, validação HMAC-SHA256 da assinatura, receção de mensagens de texto e respostas pela Cloud API.
+- `GET /api/whatsapp/health`: verificação segura da presença das variáveis de ambiente, sem expor segredos.
+- Deduplicação opcional de eventos por 24 horas via Upstash Redis REST.
+- Guia de configuração e testes: [WhatsApp Cloud API + Vercel](docs/CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md).
 
-O GitHub Actions foi executado com sucesso na última versão validada. Isto confirma verificações estáticas do repositório, não um teste real de deploy, WhatsApp ou pagamentos. Consulta `docs/PLANO-DE-LANCAMENTO.md` para os bloqueios e passos de publicação.
+## Estado atual — não é ainda uma loja pronta para vendas
 
-## Estrutura
-- `docker-compose.yml`: n8n + PostgreSQL para ambiente próprio.
-- `.env.example`: nomes das variáveis necessárias, sem segredos reais.
-- `n8n/workflows/whatsapp-venda-livros.json`: workflow importável no n8n.
-- `docs/CONFIGURACAO-HOSTINGER-EASYPANEL.md`: guia de implantação.
-- `docs/CHECKLIST-PUBLICACAO.md`: verificações antes de publicar.
-- `docs/PLANO-DE-LANCAMENTO.md`: plano de lançamento, testes finais e bloqueios externos.
-- `docs/EXECUCAO-PASSO-A-PASSO.md`: quadro de execução por etapas até à produção.
+O frontend e o atendimento são demonstrativos. Os livros/categorias não representam um catálogo comercial real. Ainda não existem checkout, gestão persistente de pedidos, confirmação de pagamento, entrega segura de e-books, reembolsos nem transferência real para um atendente humano. Não anuncies vendas nem entregues ficheiros até esses fluxos estarem implementados e testados.
+
+O código foi preparado no ramo `feat/vercel-whatsapp-cloud-api`. As alterações precisam de passar no GitHub Actions e ser integradas na branch de produção antes de aparecerem no site publicado. Não afirmamos que a conta Vercel ou a conta Meta já estejam configuradas.
 
 ## Início rápido
-1. Cria serviços/domínios para n8n e Evolution API no EasyPanel ou confirma os serviços existentes.
-2. Configura variáveis de ambiente e armazenamento persistente.
-3. Importa o workflow JSON no n8n.
-4. Define o webhook da Evolution API para o URL de produção do n8n e evento `MESSAGES_UPSERT`.
-5. Testa mensagens recebidas e respostas com um número autorizado.
-6. Só ativa vendas após configurar catálogo real, checkout e verificação de pagamento.
 
-## Segurança e pagamentos
-- Nunca coloques chaves API, passwords, cookies, tokens, QR codes de sessão ou ficheiros `.env` no GitHub.
-- Guarda segredos nas variáveis de ambiente/secret manager do EasyPanel.
-- Não entregues e-books apenas com base num comprovativo enviado por mensagem; confirma o pagamento na plataforma de pagamento.
-- Não prometer lucros nem retornos financeiros em conteúdos de trading.
-- Confirma os direitos de distribuição de cada e-book e a legalidade dos meios de pagamento em Angola e no Brasil.
+1. Abre [docs/CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md](docs/CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md).
+2. Configura na Vercel as variáveis `WHATSAPP_VERIFY_TOKEN`, `WHATSAPP_APP_SECRET`, `WHATSAPP_ACCESS_TOKEN` e `WHATSAPP_PHONE_NUMBER_ID`.
+3. Faz redeploy na Vercel.
+4. No painel Meta, define o callback `https://kiazop-livros-whatsapp.vercel.app/api/whatsapp/webhook`, usa o mesmo verify token e subscreve o campo `messages`.
+5. Testa o handshake, mensagens de texto, assinatura inválida e os logs. Configura Upstash antes de produção para evitar respostas duplicadas em retries.
+6. Confirma que o número/conta está aprovado e que o token é apropriado para produção.
 
-## Aviso
-O repositório contém código de arranque. A compatibilidade do payload da Evolution API depende da versão/instância; valida com uma execução de teste antes de produção.
+## Variáveis de ambiente
+
+Consulta `.env.example` para os nomes e valores ilustrativos. Adiciona segredos reais apenas nas Environment Variables da Vercel, nunca em commits ou no frontend. `/api/whatsapp/health` revela apenas se as variáveis existem, não os seus valores nem se o token funciona.
+
+## Infraestrutura anterior (legado)
+
+O repositório ainda contém `docker-compose.yml`, workflow n8n/Evolution e o guia Hostinger/EasyPanel para referência. Esses ficheiros são **legado** e não fazem parte do novo fluxo Vercel + Cloud API. Não atives o workflow antigo se escolheres a integração oficial.
+
+## Segurança e conformidade
+
+- Nunca coloques API keys, tokens, passwords, cookies ou segredos no GitHub.
+- Valida as assinaturas dos webhooks; não desligues a validação.
+- Confirma pagamentos com um webhook autenticado do prestador, não por comprovativo enviado no WhatsApp.
+- Usa apenas e-books que tenhas direito de distribuir.
+- Publica condições de venda, privacidade, suporte e reembolso antes de vender.
+- Respeita a janela de atendimento e os modelos de mensagem exigidos pela Meta.
+
+## Links
+
+- Site: https://kiazop-livros-whatsapp.vercel.app/
+- Repositório: https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP.
+- GitHub Actions: https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP./actions
+- [Plano de execução](docs/EXECUCAO-PASSO-A-PASSO.md)
+- [Checklist de publicação](docs/CHECKLIST-PUBLICACAO.md)

@@ -1,74 +1,94 @@
 # Execução passo a passo — KIAZOP Livros
 
-Este é o quadro de trabalho para levar a loja à produção. Não considerar uma etapa concluída sem teste real.
+Este quadro distingue código preparado de serviços externos efetivamente configurados. Uma etapa só fica concluída após teste real.
 
-## Estado
+## Estado da migração para Vercel + WhatsApp Cloud API
+
 - [x] Site demonstrativo e pesquisa/filtros no GitHub.
-- [x] Cabeçalhos básicos de segurança e validações automáticas.
-- [x] Workflow inicial do n8n criado e mantido inativo.
-- [x] URL de produção fornecido pelo proprietário: https://kiazop-livros-whatsapp.vercel.app/
-- [x] Última execução do GitHub Actions consultada: sucesso nas validações estáticas.
-- [ ] Teste manual do site publicado em telemóvel e computador; confirmar que a versão publicada corresponde ao último commit.
-- [ ] Evolution API, número WhatsApp e webhook testados.
-- [ ] Catálogo real, capas autorizadas, preços e ficheiros confirmados.
-- [ ] Pagamentos verificados no servidor antes da entrega.
-- [ ] Compra completa testada de ponta a ponta.
+- [x] Cabeçalhos de segurança e validações automáticas.
+- [x] Ramo de migração criado: `feat/vercel-whatsapp-cloud-api`.
+- [x] Função Vercel para verificação do webhook Meta e mensagens recebidas.
+- [x] Verificação HMAC-SHA256 da assinatura de webhooks POST.
+- [x] Função de diagnóstico que não revela segredos.
+- [x] Testes automatizados iniciais para handshake e assinatura inválida/válida.
+- [x] Guia de configuração da Cloud API e variáveis Vercel.
+- [ ] Aguardar GitHub Actions passar no ramo de migração.
+- [ ] Rever e integrar o Pull Request na branch de produção.
+- [ ] Confirmar deployment novo Ready na Vercel.
+- [ ] Inserir variáveis reais na Vercel (nunca no GitHub).
+- [ ] Validar callback e subscrição `messages` no painel Meta.
+- [ ] Testar envio/receção com número de teste e depois com o número de produção.
+- [ ] Configurar Upstash para deduplicação persistente antes de produção.
 
 ## Etapa 1 — Vercel
-1. URL fornecido: https://kiazop-livros-whatsapp.vercel.app/
-2. Abre o endereço num navegador, também em janela privada, e testa pesquisa, filtros, links e visualização em telemóvel.
-3. No painel Vercel, confirma que o deployment mais recente do ramo main está Ready e corresponde ao último commit do GitHub.
-4. Se houver erro, envia o texto ou uma captura do erro, sem segredos.
 
-**Estado:** URL recebido e validações do repositório passaram. O acesso HTTP automatizado nesta conversa não confirmou o conteúdo live, por isso o teste visual final continua pendente.
+URL informado: https://kiazop-livros-whatsapp.vercel.app/
 
-## Etapa 2 — WhatsApp / Evolution API / n8n
-- [ ] Confirmar que n8n e Evolution API estão ativos no EasyPanel e usam HTTPS.
-- [ ] Confirmar versão Evolution API, nome da instância e número ligado.
-- [ ] Configurar no ambiente do n8n EVOLUTION_API_URL, EVOLUTION_INSTANCE e EVOLUTION_API_KEY. Não colocar segredos no GitHub.
-- [ ] Importar n8n/workflows/whatsapp-venda-livros.json.
-- [ ] Configurar MESSAGES_UPSERT para o webhook de produção /webhook/whatsapp-livros-inbound.
-- [ ] Testar mensagem recebida, resposta, mensagem própria, grupo, mensagem vazia e erro.
-- [ ] Só ativar o workflow após os testes passarem.
+1. Confirma que o projeto Vercel está ligado ao repositório e à branch que vai receber a migração.
+2. Depois de integrar as alterações, confirma que o deployment mais recente está Ready e corresponde ao commit integrado.
+3. Abre o site num telemóvel e num computador; testa pesquisa, filtros, navegação e links.
+4. Abre `/api/whatsapp/health`. O estado `configured` indica apenas presença das variáveis obrigatórias; não comprova validade de credenciais ou ligação Meta.
 
-**Critério:** mensagem direta recebe uma única resposta e os casos que devem ser ignorados não recebem resposta.
+**Estado:** o código foi preparado no GitHub, mas ainda não há confirmação de deployment, nem de variáveis reais no painel Vercel.
+
+## Etapa 2 — WhatsApp Cloud API oficial
+
+Seguir [docs/CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md](CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md).
+
+- [ ] Criar/configurar aplicação Meta e WhatsApp Business Account.
+- [ ] Adicionar variáveis `WHATSAPP_VERIFY_TOKEN`, `WHATSAPP_APP_SECRET`, `WHATSAPP_ACCESS_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID` e confirmar `WHATSAPP_API_VERSION`.
+- [ ] Configurar callback `https://kiazop-livros-whatsapp.vercel.app/api/whatsapp/webhook`.
+- [ ] Verificar o callback com o mesmo verify token e subscrever `messages`.
+- [ ] Testar respostas para CATÁLOGO, 1, MOEDA e ATENDIMENTO.
+- [ ] Testar assinatura inválida, estado de entrega e mensagens não textuais.
+- [ ] Configurar Upstash Redis REST para impedir respostas duplicadas em retries.
+
+A Cloud API oficial substitui n8n/Evolution para o fluxo novo. O workflow antigo permanece inativo e é apenas legado.
 
 ## Etapa 3 — catálogo comercial real
-- [ ] Fornecer títulos, autores, descrições, idioma e categoria dos livros que tens direito de vender.
+
+- [ ] Fornecer títulos, autores, descrições, idioma e categorias dos livros que tens direito de vender.
 - [ ] Usar capas próprias ou licenciadas.
 - [ ] Definir preço e moeda por produto (AOA e/ou BRL).
-- [ ] Confirmar ficheiros finais e guardá-los em armazenamento privado, não no GitHub público.
+- [ ] Confirmar os ficheiros finais e guardá-los em armazenamento privado, não no GitHub público.
 - [ ] Publicar condições de venda, privacidade, suporte e reembolso.
+- [ ] Ligar o menu do WhatsApp a um catálogo real em vez de respostas demonstrativas.
 
-Até receber os dados reais, os títulos do site são apenas demonstrativos.
+Até receber os dados reais, os títulos e categorias são exemplos.
 
 ## Etapa 4 — pagamento e entrega
-- [ ] Confirmar país do vendedor, tipo de conta comercial e países dos clientes.
-- [ ] Escolher um prestador que aceite legalmente o vendedor e as moedas pretendidas.
-- [ ] Criar pedidos com identificador único e estado pendente.
-- [ ] Confirmar pagamento por API/webhook autenticado no servidor; validar assinatura, pedido, valor e moeda.
+
+- [ ] Confirmar país do vendedor, tipo de conta e países dos clientes.
+- [ ] Escolher um prestador de pagamento que aceite legalmente o vendedor e as moedas pretendidas.
+- [ ] Criar pedidos persistentes com identificador único e estado pendente.
+- [ ] Confirmar pagamento por webhook/API autenticado; validar assinatura, pedido, valor e moeda.
 - [ ] Tratar eventos repetidos de forma idempotente.
 - [ ] Entregar apenas após confirmação válida, com ligação privada e temporária.
-- [ ] Testar rejeição, pagamento pendente, webhook inválido, repetição e reembolso.
+- [ ] Testar rejeição, pendência, webhook inválido, repetição e reembolso.
 
-Nunca entregar um livro só porque o cliente enviou um comprovativo por mensagem.
+Nunca entregar um livro apenas porque o cliente enviou um comprovativo por mensagem.
 
 ## Etapa 5 — teste ponta a ponta
-- [ ] Site público HTTPS funciona em computador e telemóvel.
-- [ ] Pedido tem produto, preço e moeda corretos.
-- [ ] WhatsApp recebe e responde uma única vez.
-- [ ] Pagamento aprovado altera o estado do pedido.
+
+- [ ] Site HTTPS funciona em computador e telemóvel.
+- [ ] Mensagem WhatsApp recebe uma única resposta.
+- [ ] Pedido contém produto, preço e moeda corretos.
+- [ ] Pagamento aprovado atualiza o pedido.
 - [ ] Pagamento pendente/rejeitado não entrega ficheiro.
 - [ ] Pagamento confirmado entrega apenas o produto comprado.
 - [ ] Link de download é privado e expira.
 - [ ] Logs não expõem segredos; backups e reembolsos foram testados.
 
 ## Segurança
-Nunca partilhar .env, passwords, API keys, tokens, cookies ou QR codes de sessão no GitHub/chat. Guardar segredos apenas nas variáveis de ambiente dos serviços.
+
+Nunca partilhar `.env`, passwords, API keys, tokens, cookies ou QR codes de sessão no GitHub/chat. Guardar segredos apenas nas variáveis de ambiente dos serviços.
 
 ## Links
+
 - Repositório: https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP.
+- Site: https://kiazop-livros-whatsapp.vercel.app/
 - Vercel: https://vercel.com/dashboard
-- Testes: https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP./actions
-- Guia Hostinger/EasyPanel: docs/CONFIGURACAO-HOSTINGER-EASYPANEL.md
-- Checklist: docs/CHECKLIST-PUBLICACAO.md
+- GitHub Actions: https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP./actions
+- Guia novo: [Configuração WhatsApp Cloud API + Vercel](CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md)
+- Guia antigo (legado): [Hostinger/EasyPanel](CONFIGURACAO-HOSTINGER-EASYPANEL.md)
+- Checklist: [CHECKLIST-PUBLICACAO.md](CHECKLIST-PUBLICACAO.md)
