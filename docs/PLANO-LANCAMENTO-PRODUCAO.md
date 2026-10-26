@@ -5,11 +5,12 @@ Este documento é o critério de saída para publicar a loja em produção. Um c
 ## Estado verificado em 2026-10-26
 
 - [x] Código da integração WhatsApp Cloud API está em `main`.
-- [x] GitHub Actions mais recente observado: execução 19, commit `418788e248065d8ae9679ff36144327874ae3a08`, conclusão `success`.
-- [ ] Confirmar no painel Vercel que o deployment ligado a `main` está `Ready` e que o domínio de produção aponta para esse deployment.
+- [x] GitHub Actions: execução 25, commit `1a438e8c471a78c35d3df6199c3b842481edd426`, conclusão `success` ([ver execução](https://github.com/manuelbaptistalicanga00-sys/KIAZOP-LIVROS-WHATSAPP./actions/runs/40248782597)).
+- [x] O check de deployment Vercel no commit `1a438e8c471a78c35d3df6199c3b842481edd426` reportou `success` ([deployment Vercel](https://vercel.com/manuels-projects-5849ba98/kiazop-livros-whatsapp./8FK4yyb7KVrFhCu5D2hdt7wgJq6Z)). O endpoint público não pôde ser testado de forma independente neste ambiente; validar manualmente antes de anunciar o lançamento.
+- [x] Link de contacto WhatsApp adicionado ao site: `https://wa.me/244942739225` (abre uma conversa; não prova ligação à API oficial).
 - [ ] Confirmar variáveis de ambiente e testar o endpoint de diagnóstico em produção.
-- [ ] Confirmar configuração do callback e subscrição `messages` na Meta.
-- [ ] Testar mensagens recebidas e respostas reais no WhatsApp.
+- [ ] Confirmar configuração do callback e subscrição `messages` na Meta; falta acesso à conta Meta para validar.
+- [ ] Testar mensagens recebidas e respostas reais no WhatsApp (+244 942 739 225); o link público não ativa respostas automáticas.
 - [ ] Configurar armazenamento de deduplicação persistente (Upstash) antes de tráfego real.
 - [ ] Adicionar catálogo real, preços e direitos de distribuição comprovados.
 - [ ] Implementar pedidos persistentes, checkout e confirmação de pagamento por webhook autenticado.
