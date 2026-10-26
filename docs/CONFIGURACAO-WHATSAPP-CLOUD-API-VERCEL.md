@@ -1,5 +1,9 @@
 # WhatsApp Cloud API oficial na Vercel
 
+## Número público de atendimento
+
+O contacto comercial informado pelo proprietário é **+244 942 739 225**. Link direto: https://wa.me/244942739225. O link `wa.me` abre uma conversa, mas não ativa por si só a API oficial nem respostas automáticas. Na configuração Meta, `WHATSAPP_PHONE_NUMBER_ID` tem de ser o ID técnico fornecido pelo painel Meta; não é o número telefónico em formato internacional.
+
 Este guia substitui a rota de instalação Hostinger/EasyPanel para a integração WhatsApp. O site continua estático e a Vercel executa as funções serverless em `/api/whatsapp/`. Não é necessário alojar n8n ou Evolution API para este fluxo.
 
 ## O que foi preparado
