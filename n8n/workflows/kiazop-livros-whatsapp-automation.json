@@ -1,0 +1,145 @@
+{
+  "name": "KIAZOP LIVROS — WhatsApp Cloud API via Vercel",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kiazop-livros-whatsapp",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "a1f1cbd2-0c1a-4e0a-9b8c-010000000001",
+      "name": "Webhook — eventos validados pela Vercel",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "webhookId": "kiazop-livros-whatsapp"
+    },
+    {
+      "parameters": {
+        "jsCode": "const crypto = require('crypto');\nconst item = $input.first();\nconst headers = item.json.headers || {};\nconst supplied = headers['x-kiazop-webhook-secret'] || headers['X-Kiazop-Webhook-Secret'];\nconst expected = $env.N8N_FORWARD_SECRET;\nif (!expected || !supplied || supplied !== expected) {\n  throw new Error('Webhook recusado: segredo ausente ou inválido. Configure N8N_FORWARD_SECRET no n8n e na Vercel.');\n}\nconst payload = item.json.body ?? item.json;\nconst value = payload?.entry?.[0]?.changes?.[0]?.value;\nconst message = value?.messages?.[0];\nif (!message || message.type !== 'text' || !message.text?.body) {\n  return [{ json: { skip: true, reason: 'Evento sem mensagem de texto recebida.' } }];\n}\nconst from = message.from;\nconst phoneNumberId = value?.metadata?.phone_number_id || $env.WHATSAPP_PHONE_NUMBER_ID;\nconst incoming = message.text.body.trim();\nlet reply = 'Olá! Bem-vindo à KIAZOP LIVROS 📚\\\\n\\\\nResponde com uma opção:\\\\n1 — Ver catálogo\\\\n2 — Categorias de livros\\\\n3 — Como comprar\\\\n4 — Falar com atendimento';\nconst normalized = incoming.normalize('NFD').replace(/[\\\\u0300-\\\\u036f]/g, '').toLowerCase();\nif (['1', 'catalogo', 'livros'].includes(normalized)) reply = '📚 KIAZOP LIVROS\\\\nO nosso catálogo está a ser atualizado. Diz-nos o título ou tema do livro que procuras e a equipa confirma a disponibilidade.';\nelse if (['2', 'categoria', 'categorias'].includes(normalized)) reply = '📖 Que tipo de livro procuras?\\\\n• Desenvolvimento pessoal\\\\n• Negócios e finanças\\\\n• Educação\\\\n• Fé e estudos bíblicos\\\\nEscreve o tema pretendido.';\nelse if (['3', 'comprar', 'pagamento'].includes(normalized)) reply = '🛒 Para consultar disponibilidade e condições de compra, envia o título do livro pretendido. Não envies dados bancários nem palavras-passe por WhatsApp.';\nelse if (['4', 'atendimento', 'humano', 'pessoa'].includes(normalized)) reply = '👋 Atendimento KIAZOP LIVROS: https://wa.me/244942739225\\\\nEscreve a tua dúvida e a equipa dará seguimento.';\nreturn [{ json: { skip: false, from, phoneNumberId, reply, incomingMessageId: message.id } }];"
+      },
+      "id": "a1f1cbd2-0c1a-4e0a-9b8c-010000000002",
+      "name": "Validar segredo e preparar resposta",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "a1f1cbd2-0c1a-4e0a-9b8c-010000000003",
+              "leftValue": "={{ $json.skip }}",
+              "rightValue": false,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1f1cbd2-0c1a-4e0a-9b8c-010000000004",
+      "name": "É mensagem de texto?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        720,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v22.0/{{ $json.phoneNumberId }}/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.WHATSAPP_ACCESS_TOKEN }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={{ JSON.stringify({ messaging_product: 'whatsapp', recipient_type: 'individual', to: $json.from, type: 'text', text: { preview_url: false, body: $json.reply } }) }}",
+        "options": {}
+      },
+      "id": "a1f1cbd2-0c1a-4e0a-9b8c-010000000005",
+      "name": "Enviar resposta pela WhatsApp Cloud API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        980,
+        220
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook — eventos validados pela Vercel": {
+      "main": [
+        [
+          {
+            "node": "Validar segredo e preparar resposta",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar segredo e preparar resposta": {
+      "main": [
+        [
+          {
+            "node": "É mensagem de texto?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "É mensagem de texto?": {
+      "main": [
+        [
+          {
+            "node": "Enviar resposta pela WhatsApp Cloud API",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "a1f1cbd2-0c1a-4e0a-9b8c-010000000006",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
