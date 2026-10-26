@@ -16,6 +16,7 @@ Loja demonstrativa de livros digitais com frontend estático na Vercel e integra
 - `GET /api/whatsapp/health`: verificação segura da presença das variáveis de ambiente, sem expor segredos.
 - Deduplicação opcional de eventos por 24 horas via Upstash Redis REST.
 - Guia de configuração, incluindo a ponte segura para n8n: [WhatsApp Cloud API + Vercel](docs/CONFIGURACAO-WHATSAPP-CLOUD-API-VERCEL.md).
+- Workflow n8n importável para respostas KIAZOP LIVROS: [guia de configuração n8n](docs/N8N-KIAZOP-LIVROS.md) e [ficheiro JSON do workflow](n8n/workflows/kiazop-livros-whatsapp-automation.json). O workflow é criado inativo até configurares segredos e testares credenciais reais.
 
 ## Estado atual — não é ainda uma loja pronta para vendas
 
