@@ -2,6 +2,12 @@
 
 Loja demonstrativa de livros digitais com frontend estático na Vercel e integração inicial com a **WhatsApp Cloud API oficial da Meta**, através de Vercel Functions. A nova integração não exige VPS, Hostinger, EasyPanel, n8n ou Evolution API.
 
+## Contacto WhatsApp
+
+- Número de atendimento: **+244 942 739 225**.
+- Link público de conversa: https://wa.me/244942739225
+- O botão do site abre uma conversa com mensagem inicial. Isto **não confirma** que a WhatsApp Cloud API esteja ligada nem que respostas automáticas estejam ativas; para isso continuam necessárias as credenciais da Meta na Vercel e testes reais.
+
 ## O que está preparado
 
 - Site responsivo com pesquisa e filtros de catálogo.
