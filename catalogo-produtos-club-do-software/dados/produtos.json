@@ -1,0 +1,757 @@
+[
+  {
+    "id": "evolution-press",
+    "name": "Evolution Press",
+    "category": "01-whatsapp-e-crm",
+    "folder": "1Mic0PT2q3oxpqsfdYCSsnRKLavJ3t5yH",
+    "summary": "Plugin WordPress descrito como CRM para WhatsApp integrado à Evolution API. A documentação da coleção lista gestão de conversas/contatos, tags, templates e automações WooCommerce/WordPress, incluindo agendamento.",
+    "audience": "Lojas WooCommerce e equipas que precisam centralizar conversas e contactos no painel WordPress.",
+    "official": "https://clubdosoftware.com.br/evolutionpress.html",
+    "official_label": "Guia público do Evolution Press (Club do Software).",
+    "price_key": "evolutionpress",
+    "warning": "A integração do pacote é com a Evolution API; não a apresentar como WhatsApp Cloud API oficial da Meta. Verificar termos Meta/WhatsApp, consentimento dos contactos e licenças do plugin antes de vender ou automatizar mensagens.",
+    "files": [
+      {
+        "name": "ad29919beecb40f-evolutionpress.zip",
+        "id": "1nLtrbQr6opJ1LRdOWgnaDUTjeRuOyURY",
+        "size_bytes": 248521,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1nLtrbQr6opJ1LRdOWgnaDUTjeRuOyURY/view"
+      },
+      {
+        "name": "Tutorial — formato correto da chave API Global",
+        "id": "1copH6sITegm6T_RMpHwz203Ip7TKYi1v",
+        "size_bytes": 5446748,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1copH6sITegm6T_RMpHwz203Ip7TKYi1v/view"
+      },
+      {
+        "name": "Tutorial — aba Mensagens",
+        "id": "1b1aiWrJ8XpDtuefqQHg81W8WpQez_1hE",
+        "size_bytes": 7356107,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1b1aiWrJ8XpDtuefqQHg81W8WpQez_1hE/view"
+      },
+      {
+        "name": "Tutorial — gerenciamento de Tags",
+        "id": "1mo3RTeZqrzjtc0WhQir4XDrvpZEshELb",
+        "size_bytes": 6411429,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1mo3RTeZqrzjtc0WhQir4XDrvpZEshELb/view"
+      },
+      {
+        "name": "Tutorial — gerenciar conversas do WhatsApp",
+        "id": "1DyAtLTR3RQo6PD6PNJmEj1jn_AZQ_q1o",
+        "size_bytes": 4977092,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1DyAtLTR3RQo6PD6PNJmEj1jn_AZQ_q1o/view"
+      },
+      {
+        "name": "Tutorial — importar contactos",
+        "id": "1vAgcJYxMhuib4aUPO5t_JCB_2JNzMFe6",
+        "size_bytes": 12806969,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1vAgcJYxMhuib4aUPO5t_JCB_2JNzMFe6/view"
+      },
+      {
+        "name": "Tutorial — instalar o plugin Evolution Press",
+        "id": "1Q4mLZ1AR3l2ZjxhinYqqjfsyfax31S54",
+        "size_bytes": 14903147,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1Q4mLZ1AR3l2ZjxhinYqqjfsyfax31S54/view"
+      },
+      {
+        "name": "Tutorial — sistema de automação",
+        "id": "117fnYvqCU7p2u-Z3dB1qRy9Cgqb9jZO5",
+        "size_bytes": 5605909,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/117fnYvqCU7p2u-Z3dB1qRy9Cgqb9jZO5/view"
+      },
+      {
+        "name": "Tutorial — sistema Kanban",
+        "id": "149vYf6GjOS9jd2xFOUUeMhRrj8hGk5q-",
+        "size_bytes": 4843166,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/149vYf6GjOS9jd2xFOUUeMhRrj8hGk5q-/view"
+      },
+      {
+        "name": "COMO INSTALAR.txt",
+        "id": "1BOIEfqeT_GNaLlUkTO61fOouzjZdc9BH",
+        "size_bytes": 49,
+        "kind": "documento",
+        "url": "https://drive.google.com/file/d/1BOIEfqeT_GNaLlUkTO61fOouzjZdc9BH/view"
+      },
+      {
+        "name": "LINKS DO VIDEO INSTALANDO.txt",
+        "id": "1aJBtp37Fy3xQ_dJDaKcExiloSzJe75Py",
+        "size_bytes": 602,
+        "kind": "documento",
+        "url": "https://drive.google.com/file/d/1aJBtp37Fy3xQ_dJDaKcExiloSzJe75Py/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1Mic0PT2q3oxpqsfdYCSsnRKLavJ3t5yH",
+    "pricing": {
+      "aoa": [
+        15000,
+        35000,
+        75000
+      ],
+      "usd": [
+        15,
+        35,
+        75
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "doc": "01-whatsapp-e-crm/evolution-press.md"
+  },
+  {
+    "id": "mordomo-ia",
+    "name": "Mordomo IA",
+    "category": "02-ia-e-financas",
+    "folder": "1G-T9uRK6t_dBHK5aEb8Jh_uwfbmdcuTU",
+    "summary": "Aplicação web de gestão financeira pessoal/empresarial com receitas, despesas, dívidas, metas, lista de mercado, veículos e lembretes de manutenção; inclui um assistente por WhatsApp descrito para registar movimentos e consultar saldo. Os ficheiros também incluem Supabase e workflow n8n.",
+    "audience": "Utilizadores individuais, famílias e pequenos negócios que procuram organizar finanças e lembretes.",
+    "official": "https://clubdosoftware.com.br/mordomo.html",
+    "official_label": "Página pública de funcionalidades do Mordomo (Club do Software).",
+    "price_key": "mordomo",
+    "warning": "O produto trata dados financeiros pessoais. Aplicar minimização, controlo de acesso, backups e política de privacidade; não o anunciar como consultoria financeira ou aconselhamento garantido.",
+    "files": [
+      {
+        "name": "1c81573f10f84d9-Supabase.zip",
+        "id": "1JcfHJBJOuVz7rt7AAMk2S1ddd7wdNQJO",
+        "size_bytes": 16196,
+        "kind": "componente",
+        "url": "https://drive.google.com/file/d/1JcfHJBJOuVz7rt7AAMk2S1ddd7wdNQJO/view"
+      },
+      {
+        "name": "3ecf74ac5e8d462-mordomo-workflow-n8n.zip",
+        "id": "1ZHrZf0AL3taBnUnJxVFfrUFDVl69zvh8",
+        "size_bytes": 10444,
+        "kind": "componente",
+        "url": "https://drive.google.com/file/d/1ZHrZf0AL3taBnUnJxVFfrUFDVl69zvh8/view"
+      },
+      {
+        "name": "ca96b1fabd514ac-App.zip",
+        "id": "1blK28s8OhzYieHlxUo9_XFET0Yl9VIYZ",
+        "size_bytes": 328044,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1blK28s8OhzYieHlxUo9_XFET0Yl9VIYZ/view"
+      },
+      {
+        "name": "df41201e798843f-Landingpage.zip",
+        "id": "1aCfjkX9qHb1RmVWYZEDHDr2MMVFa18mo",
+        "size_bytes": 5705,
+        "kind": "componente",
+        "url": "https://drive.google.com/file/d/1aCfjkX9qHb1RmVWYZEDHDr2MMVFa18mo/view"
+      },
+      {
+        "name": "Tutorial — dados fictícios",
+        "id": "1J7Mol0iiOS5jlmLP1z5WRaOFMcu4WoVj",
+        "size_bytes": 5888515,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1J7Mol0iiOS5jlmLP1z5WRaOFMcu4WoVj/view"
+      },
+      {
+        "name": "Tutorial — localizar chaves de API do Supabase",
+        "id": "1xqNBy7oEGlLw9fhq2wngJvWL7Hp36KDB",
+        "size_bytes": 2557327,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1xqNBy7oEGlLw9fhq2wngJvWL7Hp36KDB/view"
+      },
+      {
+        "name": "Tutorial — baixar arquivos do projeto",
+        "id": "1WTuJr2wfx9_HIb3pRSGeRhaqExPzF6wt",
+        "size_bytes": 2702515,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1WTuJr2wfx9_HIb3pRSGeRhaqExPzF6wt/view"
+      },
+      {
+        "name": "Tutorial — webhook n8n na Evolution API",
+        "id": "1d5SQ6OaA2zTALxSZo07v-1NYOpe8GgmW",
+        "size_bytes": 5979950,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1d5SQ6OaA2zTALxSZo07v-1NYOpe8GgmW/view"
+      },
+      {
+        "name": "Tutorial — executar localmente",
+        "id": "1EHOHTXj0BKAAnG70dgriDEye-3FT5c8c",
+        "size_bytes": 5819707,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1EHOHTXj0BKAAnG70dgriDEye-3FT5c8c/view"
+      },
+      {
+        "name": "Tutorial — configurar API e chave Supabase",
+        "id": "1LgYoR7Qqcr8hb7k63e3pBKA6qUNgJ9Rr",
+        "size_bytes": 6511590,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1LgYoR7Qqcr8hb7k63e3pBKA6qUNgJ9Rr/view"
+      },
+      {
+        "name": "Tutorial — credenciais no n8n",
+        "id": "111QnQrd2a2d5dNuBt3vszDmQGVbALivB",
+        "size_bytes": 12536086,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/111QnQrd2a2d5dNuBt3vszDmQGVbALivB/view"
+      },
+      {
+        "name": "Tutorial — base de dados Supabase",
+        "id": "1VxQswGQ5RhCvCcelxjsgF9jFQ3kYudGT",
+        "size_bytes": 9175025,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1VxQswGQ5RhCvCcelxjsgF9jFQ3kYudGT/view"
+      },
+      {
+        "name": "Tutorial — funcionalidades do Mordomo IA",
+        "id": "1hkXMZpXmYmeDPPpkmnvHdhd9Vp-k7O1U",
+        "size_bytes": 18357479,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1hkXMZpXmYmeDPPpkmnvHdhd9Vp-k7O1U/view"
+      },
+      {
+        "name": "Tutorial — importar workflow n8n e integrar Supabase",
+        "id": "1utvlsiXHkthX5KkUEgsCHuQdjNobA58g",
+        "size_bytes": 5793528,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1utvlsiXHkthX5KkUEgsCHuQdjNobA58g/view"
+      },
+      {
+        "name": "Tutorial — instalação do projeto",
+        "id": "1AJbr-6db8-2fo7LrHUAXLQkhaSbUXzHE",
+        "size_bytes": 4879105,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1AJbr-6db8-2fo7LrHUAXLQkhaSbUXzHE/view"
+      },
+      {
+        "name": "Tutorial — workflow n8n passo a passo",
+        "id": "1omCx1ixnxASiq19AV_yv1thyrAo5J8CU",
+        "size_bytes": 15754015,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1omCx1ixnxASiq19AV_yv1thyrAo5J8CU/view"
+      },
+      {
+        "name": "INFORMAÇÕES IMPORTANTES.txt",
+        "id": "12z_r8wTiPWR0wZDjZf4QTJEPKXGfta6h",
+        "size_bytes": 42,
+        "kind": "documento",
+        "url": "https://drive.google.com/file/d/12z_r8wTiPWR0wZDjZf4QTJEPKXGfta6h/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1G-T9uRK6t_dBHK5aEb8Jh_uwfbmdcuTU",
+    "pricing": {
+      "aoa": [
+        5000,
+        12000,
+        25000
+      ],
+      "usd": [
+        5,
+        12,
+        25
+      ],
+      "setup_aoa": 50000,
+      "setup_usd": 49
+    },
+    "doc": "02-ia-e-financas/mordomo-ia.md"
+  },
+  {
+    "id": "evolution-manager",
+    "name": "Evolution Manager",
+    "category": "01-whatsapp-e-crm",
+    "folder": "1ZX5sNEqOF7hEXwTRhOHZyH1T1vVKl7yc",
+    "summary": "Interface web para gerir instâncias da Evolution API. O README do ZIP menciona integração com Typebot, webhooks, configurações e recursos de IA; os tutoriais cobrem várias instâncias e conexão ao WhatsApp.",
+    "audience": "Agências e equipas técnicas que operam integrações de mensagens e instâncias próprias.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "Catálogo público do Club do Software, onde Evolution Manager é listado; sem página individual confirmada.",
+    "price_key": "evolutionmanager",
+    "warning": "Não confundir com a API oficial da Meta. A ligação por QR/Evolution API pode ter riscos de suspensão e políticas; não comercializar envio em massa não solicitado. O README mostra badge MIT, mas a licença do pacote deve ser confirmada no ZIP completo.",
+    "files": [
+      {
+        "name": "f1a63d6a459a401-Evolution Manager.zip",
+        "id": "1AH6TthixlHsoiK4GJk1ciYx-SH4IJmA6",
+        "size_bytes": 680503,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1AH6TthixlHsoiK4GJk1ciYx-SH4IJmA6/view"
+      },
+      {
+        "name": "Tutorial — múltiplas instâncias",
+        "id": "1otBvT_8eC8PF5oxb-fnY1tCoAAprJAV5",
+        "size_bytes": 3259682,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1otBvT_8eC8PF5oxb-fnY1tCoAAprJAV5/view"
+      },
+      {
+        "name": "Tutorial — ligar instância ao WhatsApp e funcionalidades",
+        "id": "1Ril8SmjuAowvB7AyujL2VLyCdFvizGCy",
+        "size_bytes": 11620744,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1Ril8SmjuAowvB7AyujL2VLyCdFvizGCy/view"
+      },
+      {
+        "name": "Tutorial — configurar primeira instância",
+        "id": "1QjCQ0pwyHCrGxnno42MWN32mkOZdCDIM",
+        "size_bytes": 8662040,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1QjCQ0pwyHCrGxnno42MWN32mkOZdCDIM/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1ZX5sNEqOF7hEXwTRhOHZyH1T1vVKl7yc",
+    "pricing": {
+      "aoa": [
+        10000,
+        30000,
+        60000
+      ],
+      "usd": [
+        10,
+        29,
+        59
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "doc": "01-whatsapp-e-crm/evolution-manager.md"
+  },
+  {
+    "id": "fusion",
+    "name": "FusiON",
+    "category": "03-ia-e-automacao",
+    "folder": "12nQjx0cy3oMqbwkMNE9_qNJ_CUOUHDE3",
+    "summary": "Aplicação web de desenho visual de fluxos para agentes de IA: adicionar agentes especializados, ligar etapas num canvas, configurar cada agente e executar o fluxo. A descrição técnica do README indica React/TypeScript e componentes de workflow.",
+    "audience": "Agências de automação e equipas que querem prototipar workflows com vários agentes.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "Catálogo público do Club do Software; sem página individual confirmada.",
+    "price_key": "fusion",
+    "warning": "Validar quais conectores funcionam realmente e os custos por execução/modelo. Não prometer resultados automáticos sem testar os fluxos e salvaguardas de IA.",
+    "files": [
+      {
+        "name": "ed1792365046485-FusiON.zip",
+        "id": "1U1xE_qKlDX1GGWHhZflcUJyVHayKuBxe",
+        "size_bytes": 264163,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1U1xE_qKlDX1GGWHhZflcUJyVHayKuBxe/view"
+      },
+      {
+        "name": "Tutorial — configuração",
+        "id": "13B1f8HfoBkGi26I1COXcYuMpBWdnF26p",
+        "size_bytes": 54659520,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/13B1f8HfoBkGi26I1COXcYuMpBWdnF26p/view"
+      },
+      {
+        "name": "Tutorial — FusiON na prática",
+        "id": "1bhXtVgf4JNnhrLmIe5hT-TO6KNFlhy-E",
+        "size_bytes": 14698723,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1bhXtVgf4JNnhrLmIe5hT-TO6KNFlhy-E/view"
+      },
+      {
+        "name": "Tutorial — introdução",
+        "id": "1G3TR0D59Y2RSaCUjY8i4vj0NQIshCPj8",
+        "size_bytes": 15060022,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1G3TR0D59Y2RSaCUjY8i4vj0NQIshCPj8/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/12nQjx0cy3oMqbwkMNE9_qNJ_CUOUHDE3",
+    "pricing": {
+      "aoa": [
+        15000,
+        40000,
+        100000
+      ],
+      "usd": [
+        15,
+        39,
+        99
+      ],
+      "setup_aoa": 200000,
+      "setup_usd": 199
+    },
+    "doc": "03-ia-e-automacao/fusion.md"
+  },
+  {
+    "id": "advoga-pro",
+    "name": "Advoga PRO",
+    "category": "04-juridico-e-servicos",
+    "folder": "1uNS1yvuFzMIZNI2_A4RvZKRll9S1RTjo",
+    "summary": "Sistema web de gestão de escritórios de advocacia. O README descreve clientes/processos, audiências e prazos, gestão financeira, documentos, relatórios e comunicação; a pasta contém um workflow n8n e tutoriais de Supabase.",
+    "audience": "Advogados independentes e pequenos escritórios, após revisão de confidencialidade e proteção de dados.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "Catálogo público do Club do Software; sem página individual confirmada.",
+    "price_key": "advoga",
+    "warning": "Dados jurídicos e de clientes são altamente confidenciais. Validar acesso, backups, residência de dados e conformidade com regras profissionais locais. Não anunciar a IA (se houver) como substituta de aconselhamento jurídico.",
+    "files": [
+      {
+        "name": "83508483ebcf433-advogapro.zip",
+        "id": "1FRGdTsoLfTHxZGjDYnZcpF7HD_FBdzD3",
+        "size_bytes": 280345,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1FRGdTsoLfTHxZGjDYnZcpF7HD_FBdzD3/view"
+      },
+      {
+        "name": "1cb55acecc8c4aa-n8n-consulta-processos-workflow.zip",
+        "id": "19URWC1Nuts0GwSvr_rauDvcRuLMYjdac",
+        "size_bytes": 2272,
+        "kind": "componente",
+        "url": "https://drive.google.com/file/d/19URWC1Nuts0GwSvr_rauDvcRuLMYjdac/view"
+      },
+      {
+        "name": "Tutorial — dados fictícios",
+        "id": "1K-fONAA8pnxiQD_7WjxezN9Xvr-8rjEm",
+        "size_bytes": 9521703,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1K-fONAA8pnxiQD_7WjxezN9Xvr-8rjEm/view"
+      },
+      {
+        "name": "Tutorial — executar localmente",
+        "id": "1VBF16Pak3rAsjDbQZtCFUvXtE4__LBd-",
+        "size_bytes": 4102169,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1VBF16Pak3rAsjDbQZtCFUvXtE4__LBd-/view"
+      },
+      {
+        "name": "Tutorial — configurar API/Supabase",
+        "id": "18rno7z34INqzm7sCDGPPIZGU4U7bXvzS",
+        "size_bytes": 5668748,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/18rno7z34INqzm7sCDGPPIZGU4U7bXvzS/view"
+      },
+      {
+        "name": "Tutorial — base de dados Supabase",
+        "id": "1_f1xkR4v9zdLlyYjf3IOqwhtshB0KQiW",
+        "size_bytes": 8662615,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1_f1xkR4v9zdLlyYjf3IOqwhtshB0KQiW/view"
+      },
+      {
+        "name": "Tutorial — funcionalidades",
+        "id": "1v2hXDsW54tUKMGEu6WoHH8UYolTIkJOB",
+        "size_bytes": 15442246,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1v2hXDsW54tUKMGEu6WoHH8UYolTIkJOB/view"
+      },
+      {
+        "name": "Tutorial — instalação",
+        "id": "1ebVbiteArjH2VS8qq3gXAuKA-kc0bsH1",
+        "size_bytes": 8144046,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1ebVbiteArjH2VS8qq3gXAuKA-kc0bsH1/view"
+      },
+      {
+        "name": "Tutorial — workflow n8n",
+        "id": "14bEMhBkN1OrZDhJIihdxTPtGmhFsqu9c",
+        "size_bytes": 12485640,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/14bEMhBkN1OrZDhJIihdxTPtGmhFsqu9c/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1uNS1yvuFzMIZNI2_A4RvZKRll9S1RTjo",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        100000
+      ],
+      "usd": [
+        19,
+        49,
+        99
+      ],
+      "setup_aoa": 300000,
+      "setup_usd": 299
+    },
+    "doc": "04-juridico-e-servicos/advoga-pro.md"
+  },
+  {
+    "id": "service-pro",
+    "name": "Service PRO",
+    "category": "04-juridico-e-servicos",
+    "folder": "16MBQthkTvyNQyfeQv_JQVSTJcUs_yDBQ",
+    "summary": "Aplicação web de ordens de serviço para empresas de assistência técnica. O README descreve clientes, técnicos, tipos de serviço, ordens de trabalho, estatísticas e impressão de ordens; usa Supabase/PostgreSQL segundo a documentação.",
+    "audience": "Técnicos, oficinas e empresas de reparação/manutenção.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "Catálogo público do Club do Software; sem página individual confirmada.",
+    "price_key": "service",
+    "warning": "Confirmar regras de acesso a dados de clientes, backups do Supabase, custos de infraestrutura e suporte antes de vender como serviço gerido.",
+    "files": [
+      {
+        "name": "servicepro.zip",
+        "id": "12G1XkJWxVhJHK3kqBZ7Nn0QToO1Q3Llu",
+        "size_bytes": 265764,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/12G1XkJWxVhJHK3kqBZ7Nn0QToO1Q3Llu/view"
+      },
+      {
+        "name": "Tutorial — dados fictícios",
+        "id": "1596AMJXq_761nxtpuhN4VXyUpUHkBNTH",
+        "size_bytes": 2115678,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1596AMJXq_761nxtpuhN4VXyUpUHkBNTH/view"
+      },
+      {
+        "name": "Tutorial — executar localmente",
+        "id": "1JN-G5wOJeHgCFsPPt6okkZttUSfd6QZ2",
+        "size_bytes": 2562343,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1JN-G5wOJeHgCFsPPt6okkZttUSfd6QZ2/view"
+      },
+      {
+        "name": "Tutorial — configurar API/Supabase",
+        "id": "1PTC97eFDSys0O5yRBLuhSSGvUtpAK8XU",
+        "size_bytes": 4173942,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1PTC97eFDSys0O5yRBLuhSSGvUtpAK8XU/view"
+      },
+      {
+        "name": "Tutorial — configurar banco de dados",
+        "id": "1yOs5ePCG7Wkz_64jsgofkhPPa96tk4uR",
+        "size_bytes": 5909895,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1yOs5ePCG7Wkz_64jsgofkhPPa96tk4uR/view"
+      },
+      {
+        "name": "Tutorial — funcionalidades",
+        "id": "11xHylnFfRapBbUarX-0ASqwzijy8aIjt",
+        "size_bytes": 9640801,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/11xHylnFfRapBbUarX-0ASqwzijy8aIjt/view"
+      },
+      {
+        "name": "Tutorial — instalação",
+        "id": "1XZXxCrUOWgtwp73BWXn3lz0YwfmlFUdE",
+        "size_bytes": 4002159,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1XZXxCrUOWgtwp73BWXn3lz0YwfmlFUdE/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/16MBQthkTvyNQyfeQv_JQVSTJcUs_yDBQ",
+    "pricing": {
+      "aoa": [
+        15000,
+        35000,
+        80000
+      ],
+      "usd": [
+        15,
+        35,
+        79
+      ],
+      "setup_aoa": 250000,
+      "setup_usd": 249
+    },
+    "doc": "04-juridico-e-servicos/service-pro.md"
+  },
+  {
+    "id": "barbearia-pro",
+    "name": "Barbearia PRO",
+    "category": "05-negocios-locais",
+    "folder": "1n2sNImn43LroCdfy7UXsdigTzG6j5m0J",
+    "summary": "Sistema de gestão de agendamentos para barbearias, segundo a página pública da coleção. O Drive inclui um pacote ZIP e vídeos de overview/instalação; a documentação funcional do ZIP não foi inspecionada neste ambiente.",
+    "audience": "Barbearias independentes e pequenas redes que precisam organizar agenda e operação.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "Catálogo público do Club do Software, que lista Barbearia PRO; sem página individual confirmada.",
+    "price_key": "barber",
+    "warning": "O ZIP tem cerca de 118,8 MB e excede o limite de 100 MiB de download deste ambiente. Os links do Drive funcionam com as permissões da pasta; confirmar licença e conteúdo antes de anunciar.",
+    "files": [
+      {
+        "name": "Barbearia PRO-20250906T005652Z-1-001.zip",
+        "id": "14Fr7_160ZB-vh5GLFGr2-XFPfFpAuXGu",
+        "size_bytes": 118843743,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/14Fr7_160ZB-vh5GLFGr2-XFPfFpAuXGu/view"
+      },
+      {
+        "name": "Tutorial — instalar o sistema",
+        "id": "1tTBkhJbBLNLbA0cgNX3zlErbq9TSKbOa",
+        "size_bytes": 33519689,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1tTBkhJbBLNLbA0cgNX3zlErbq9TSKbOa/view"
+      },
+      {
+        "name": "Tutorial — overview",
+        "id": "1JpJoq-vp8UjAKqaL4BR7oVuDhSD-nyTG",
+        "size_bytes": 10564534,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1JpJoq-vp8UjAKqaL4BR7oVuDhSD-nyTG/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1n2sNImn43LroCdfy7UXsdigTzG6j5m0J",
+    "pricing": {
+      "aoa": [
+        8000,
+        20000,
+        40000
+      ],
+      "usd": [
+        8,
+        19,
+        39
+      ],
+      "setup_aoa": 100000,
+      "setup_usd": 99
+    },
+    "doc": "05-negocios-locais/barbearia-pro.md"
+  },
+  {
+    "id": "pousada-pro",
+    "name": "Pousada PRO",
+    "category": "05-negocios-locais",
+    "folder": "1Buo-sCtzrR5o56dmnvEuk5j_huxWVyvT",
+    "summary": "Sistema de gestão para pousadas. O pacote inclui ficheiros de alojamento/quartos, reservas e administração, além de vídeos de overview e instalação.",
+    "audience": "Pequenas pousadas e hospedagens que precisam gerir quartos, reservas e operação.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "Catálogo público do Club do Software, que lista Pousada PRO; sem página individual confirmada.",
+    "price_key": "pousada",
+    "warning": "O ZIP contém um Aviso Legal que declara código de terceiros, GPL e ausência de parceria/afiliação oficial. Confirmar a licença e avisos de copyright do código interno antes de revender, modificar ou operar. Não apresentar como produto oficial do desenvolvedor original.",
+    "files": [
+      {
+        "name": "Subpasta do produto 8 - POUSADA PRO",
+        "id": "1eD9s77qB3PJ4WWNqkuWMzGyPhaq3ibso",
+        "size_bytes": null,
+        "kind": "pasta",
+        "url": "https://drive.google.com/drive/folders/1eD9s77qB3PJ4WWNqkuWMzGyPhaq3ibso"
+      },
+      {
+        "name": "Pousada PRO-20250906T005833Z-1-001.zip",
+        "id": "1vsrUi2v0dmzhEmLAxA_nIy1nKjSVRvWk",
+        "size_bytes": 74783261,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1vsrUi2v0dmzhEmLAxA_nIy1nKjSVRvWk/view"
+      },
+      {
+        "name": "Tutorial — instalação do sistema",
+        "id": "1h7qFZOHtKKX6hCqylwr8Ml4u2cKHMKTd",
+        "size_bytes": 58123828,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1h7qFZOHtKKX6hCqylwr8Ml4u2cKHMKTd/view"
+      },
+      {
+        "name": "Tutorial — overview",
+        "id": "1O1RA2LnuORJVa8J5tM4G02_10QFArHqr",
+        "size_bytes": 5884885,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1O1RA2LnuORJVa8J5tM4G02_10QFArHqr/view"
+      },
+      {
+        "name": "Pasta BONUS no Drive",
+        "id": "1bU78UbfjxDZzbpqp1evffMFdegPfCmxX",
+        "size_bytes": null,
+        "kind": "pasta",
+        "url": "https://drive.google.com/drive/folders/1bU78UbfjxDZzbpqp1evffMFdegPfCmxX"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1Buo-sCtzrR5o56dmnvEuk5j_huxWVyvT",
+    "pricing": {
+      "aoa": [
+        30000,
+        70000,
+        150000
+      ],
+      "usd": [
+        29,
+        69,
+        149
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "doc": "05-negocios-locais/pousada-pro.md"
+  },
+  {
+    "id": "delivery-max",
+    "name": "Delivery Max",
+    "category": "06-comercio-e-logistica",
+    "folder": "1dYWZrXfhq3WLarFbxVj4L6ACrNVkDh83",
+    "summary": "Sistema de pedidos e entregas para restaurantes. O README do pacote descreve catálogo/carrinho para clientes, dashboard administrativo, quadro Kanban de pedidos, produtos, entregadores/regiões e PDV; a stack inclui React/TypeScript/Supabase.",
+    "audience": "Restaurantes, takeaways e operadores de entrega local.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "Catálogo público do Club do Software, que lista Delivery Max; sem página individual confirmada.",
+    "price_key": "delivery",
+    "warning": "Confirmar gateways, taxas de pagamento, segurança/RLS, disponibilidade e custos Supabase; validar requisitos fiscais locais antes de ativar emissão de documentos.",
+    "files": [
+      {
+        "name": "5c9f3281d3fa428-deliverymax.zip",
+        "id": "1j5ytZCgkK1gyRUxUsBGsF2HjQdmmb6cf",
+        "size_bytes": 794571,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1j5ytZCgkK1gyRUxUsBGsF2HjQdmmb6cf/view"
+      },
+      {
+        "name": "Tutorial — executar localmente",
+        "id": "1aq6RRzdrOAnde3KXoqun7l80PLtxaxKV",
+        "size_bytes": 4453615,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1aq6RRzdrOAnde3KXoqun7l80PLtxaxKV/view"
+      },
+      {
+        "name": "Tutorial — API e chave Supabase",
+        "id": "1GSibcFrCaHcsbV13zlgzjV4ye3nf1SWK",
+        "size_bytes": 3465040,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1GSibcFrCaHcsbV13zlgzjV4ye3nf1SWK/view"
+      },
+      {
+        "name": "Tutorial — configurar banco Supabase",
+        "id": "12FFNJb-6Pia12Erl_62iEUBUPHAWZ_Xt",
+        "size_bytes": 6333792,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/12FFNJb-6Pia12Erl_62iEUBUPHAWZ_Xt/view"
+      },
+      {
+        "name": "Tutorial — instalação do projeto",
+        "id": "15XEkiuMDTb0XUOHBTIzBVHT9clhmefA3",
+        "size_bytes": 5164667,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/15XEkiuMDTb0XUOHBTIzBVHT9clhmefA3/view"
+      },
+      {
+        "name": "Tutorial — funcionalidades do cardápio",
+        "id": "1IyooMZ1wfoRKbXRlmBAacKG4rzF3q8WT",
+        "size_bytes": 23414216,
+        "kind": "video",
+        "url": "https://drive.google.com/file/d/1IyooMZ1wfoRKbXRlmBAacKG4rzF3q8WT/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1dYWZrXfhq3WLarFbxVj4L6ACrNVkDh83",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        120000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 350000,
+      "setup_usd": 349
+    },
+    "doc": "06-comercio-e-logistica/delivery-max.md"
+  },
+  {
+    "id": "bonus-60-sistemas",
+    "name": "Bónus — Pack +60 Sistemas",
+    "category": "07-bonus-e-por-validar",
+    "folder": "1Buo-sCtzrR5o56dmnvEuk5j_huxWVyvT",
+    "summary": "Arquivo ZIP de grande dimensão no subdiretório BÔNUS, denominado “+60 Sistemas”. Não foi aberto nem foi possível identificar individualmente os sistemas nele contidos; não é correto atribuir-lhe funções ou preços por produto sem inventário.",
+    "audience": "A definir depois de listar os itens internos e confirmar licenças.",
+    "official": "https://clubdosoftware.com.br/",
+    "official_label": "A página promocional da coleção anuncia um pack bônus com +90 sistemas; o arquivo do Drive diz +60, diferença a esclarecer com o fornecedor.",
+    "price_key": "none",
+    "warning": "Arquivo de aproximadamente 643 MB, não descarregado por exceder o limite de 100 MiB. O inventário do Drive indica “+60” enquanto a página de venda anuncia “+90”; confirmar a composição e as licenças antes de vender ou publicar preços.",
+    "files": [
+      {
+        "name": "+60 Sistemas-20250906T011631Z-1-005.zip",
+        "id": "1bkyRKPctnz4ZINAhJD00x9xUBLChpocB",
+        "size_bytes": 643236046,
+        "kind": "pacote",
+        "url": "https://drive.google.com/file/d/1bkyRKPctnz4ZINAhJD00x9xUBLChpocB/view"
+      }
+    ],
+    "folder_url": "https://drive.google.com/drive/folders/1Buo-sCtzrR5o56dmnvEuk5j_huxWVyvT",
+    "doc": "07-bonus-e-por-validar/bonus-60-sistemas.md"
+  }
+]

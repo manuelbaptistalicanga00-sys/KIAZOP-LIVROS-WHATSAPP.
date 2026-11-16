@@ -53,7 +53,7 @@ O repositório ainda contém `docker-compose.yml`, workflow n8n/Evolution e o gu
 
 ## Catálogo de scripts SaaS (rascunho interno)
 
-O inventário dos 29 arquivos da pasta Drive, organizado por categoria, com links, descrições preliminares e propostas indicativas de assinatura está em [`catalogo-produtos/`](catalogo-produtos/README.md). As fichas não substituem a verificação das funcionalidades, licença, segurança e conformidade. Os preços são propostas para serviços SaaS hospedados, não preços oficiais nem preços de revenda do código. Os arquivos binários não foram adicionados ao repositório.
+O inventário dos 29 arquivos da primeira pasta Drive está em [`catalogo-produtos/`](catalogo-produtos/README.md). O catálogo da segunda pasta, com nove produtos, tutoriais, links e preços preliminares, está em [`catalogo-produtos-club-do-software/`](catalogo-produtos-club-do-software/README.md). As fichas não substituem a verificação das funcionalidades, licenças, segurança e conformidade. Os preços são propostas para serviços SaaS hospedados, não preços oficiais nem preços de revenda do código. Os arquivos binários continuam no Drive e não foram adicionados ao repositório.
 
 ## Links
 
