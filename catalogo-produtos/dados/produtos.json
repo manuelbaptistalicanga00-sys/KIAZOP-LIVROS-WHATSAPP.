@@ -1,0 +1,901 @@
+[
+  {
+    "id": "analytics-66",
+    "name": "66analytics v33.0.0",
+    "file": "66analytics_v33.0.0 (1).zip",
+    "drive": "1TgO5DFsFtivQLInTMKfOwuGA6L7SDmuI",
+    "group": "analytics",
+    "folder": "05-marketing-analytics",
+    "summary": "Plataforma de análise de tráfego e estatísticas de websites, conforme o nome do pacote.",
+    "audience": "Agências digitais, consultores e empresas que precisam acompanhar visitas e desempenho web.",
+    "official": "https://66analytics.com/",
+    "official_label": "Site/demonstração do produto (confirmar que corresponde à versão v33 do arquivo).",
+    "drive_url": "https://drive.google.com/file/d/1TgO5DFsFtivQLInTMKfOwuGA6L7SDmuI/view",
+    "pricing": {
+      "aoa": [
+        15000,
+        40000,
+        100000
+      ],
+      "usd": [
+        15,
+        39,
+        99
+      ],
+      "setup_aoa": 250000,
+      "setup_usd": 249
+    },
+    "group_label": "Analytics e domínios",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "05-marketing-analytics/analytics-66.md"
+  },
+  {
+    "id": "ai-engine",
+    "name": "AI Engine v1.1.6 — AI Copywriter & Content Writer SaaS",
+    "file": "AI Engine v1.1.6 – AI Copywriter & Content Writer (SAAS) PHP-20240629T025438Z-001.zip",
+    "drive": "1tzXJNrU_Rvn_LCarR8SO8KtCPh9A-emS",
+    "group": "ai",
+    "folder": "01-ia-e-conteudo",
+    "summary": "Script PHP descrito como SaaS de escrita e geração de conteúdo com IA; os recursos concretos e os provedores de IA precisam ser confirmados na documentação incluída.",
+    "audience": "Criadores de conteúdo, pequenas agências e equipas de marketing.",
+    "lookup": "AI Engine v1.1.6 AI Copywriter Content Writer SaaS PHP",
+    "drive_url": "https://drive.google.com/file/d/1tzXJNrU_Rvn_LCarR8SO8KtCPh9A-emS/view",
+    "pricing": {
+      "aoa": [
+        7500,
+        25000,
+        70000
+      ],
+      "usd": [
+        8,
+        25,
+        69
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "group_label": "IA e conteúdo",
+    "marketplace_lookup": "https://codecanyon.net/search/AI%20Engine%20v1.1.6%20AI%20Copywriter%20Content%20Writer%20SaaS%20PHP",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "01-ia-e-conteudo/ai-engine.md"
+  },
+  {
+    "id": "admin-panel-generator",
+    "name": "Automatic Responsive Admin Panel Generator",
+    "file": "Automatic Responsive Admin Panel Generator with Permission Management from MySQL Database v3(1).2-20240629T025445Z-001.zip",
+    "drive": "1SdBLD1r0HfvJUdaLzdiHEMPnvBPUAXQS",
+    "group": "utility",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Gerador de painel administrativo responsivo com gestão de permissões baseada numa base de dados MySQL, conforme o título do pacote.",
+    "audience": "Programadores e pequenas software houses que constroem sistemas PHP/MySQL.",
+    "lookup": "Responsive PHP Admin Panel Generator Permission Management MySQL CodeCanyon",
+    "drive_url": "https://drive.google.com/file/d/1SdBLD1r0HfvJUdaLzdiHEMPnvBPUAXQS/view",
+    "pricing": {
+      "aoa": [
+        10000,
+        25000,
+        60000
+      ],
+      "usd": [
+        10,
+        25,
+        59
+      ],
+      "setup_aoa": 200000,
+      "setup_usd": 199
+    },
+    "group_label": "Ferramentas e desenvolvimento",
+    "marketplace_lookup": "https://codecanyon.net/search/Responsive%20PHP%20Admin%20Panel%20Generator%20Permission%20Management%20MySQL%20CodeCanyon",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/admin-panel-generator.md"
+  },
+  {
+    "id": "belloo",
+    "name": "Belloo v4.4.3.6 — Dating Software",
+    "file": "Belloo v4.4.3.6 – Complete Premium Dating Software PHP-20240629T025448Z-001.zip",
+    "drive": "1B66Td_qp_MGCGm49ANfJKvcagC0UlZ_7",
+    "group": "community",
+    "folder": "06-comunidade-financas-media",
+    "summary": "Software de comunidade/dating. A listagem de mercado consultada descreve perfis e videochamadas; confirme se essas funções existem nesta versão do arquivo.",
+    "audience": "Empreendedores que pretendem operar uma comunidade de encontros, com moderação e proteção de utilizadores.",
+    "official": "https://codecanyon.net/item/social-match-pro-premium-dating-script/11281271",
+    "official_label": "Listagem CodeCanyon localizada para Belloo; confirmar o nome/licença e a versão do arquivo antes de usar.",
+    "drive_url": "https://drive.google.com/file/d/1B66Td_qp_MGCGm49ANfJKvcagC0UlZ_7/view",
+    "pricing": {
+      "aoa": [
+        15000,
+        40000,
+        100000
+      ],
+      "usd": [
+        15,
+        39,
+        99
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comunidade e reservas",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "06-comunidade-financas-media/belloo.md"
+  },
+  {
+    "id": "classeventie",
+    "name": "Classeventie — Classes & Events Booking",
+    "file": "Classeventie - Online Classes & Events Booking PHP Script.zip",
+    "drive": "1b99b23Pg7n8N-wNTchN9y37MF8zVMzz9",
+    "group": "community",
+    "folder": "06-comunidade-financas-media",
+    "summary": "Script PHP para reservas de aulas e eventos online, conforme o título do pacote.",
+    "audience": "Formadores, escolas, organizadores de eventos e centros de formação.",
+    "lookup": "Classeventie Online Classes Events Booking PHP Script",
+    "drive_url": "https://drive.google.com/file/d/1b99b23Pg7n8N-wNTchN9y37MF8zVMzz9/view",
+    "pricing": {
+      "aoa": [
+        15000,
+        40000,
+        100000
+      ],
+      "usd": [
+        15,
+        39,
+        99
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comunidade e reservas",
+    "marketplace_lookup": "https://codecanyon.net/search/Classeventie%20Online%20Classes%20Events%20Booking%20PHP%20Script",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "06-comunidade-financas-media/classeventie.md"
+  },
+  {
+    "id": "domainskit",
+    "name": "DomainsKit v2.8 — Toolkit for Domains",
+    "file": "DomainsKit - Toolkit for Domains v2.8 PHP Script.zip",
+    "drive": "1qiaLu4cN56AKjAUK5yMUK1e4K98aTpHA",
+    "group": "utility",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Ferramentas web relacionadas com domínios; a página do fornecedor lista pesquisa/geração de domínios e consultas DNS/WHOIS. Confirmar recursos da cópia v2.8.",
+    "audience": "Webmasters, revendedores de alojamento e agências web.",
+    "official": "https://codecanyon.net/item/domaintools-awesome-domain-tools/33477831",
+    "official_label": "Listagem CodeCanyon de DomainsKit; conferir versão e licença.",
+    "drive_url": "https://drive.google.com/file/d/1qiaLu4cN56AKjAUK5yMUK1e4K98aTpHA/view",
+    "pricing": {
+      "aoa": [
+        10000,
+        25000,
+        60000
+      ],
+      "usd": [
+        10,
+        25,
+        59
+      ],
+      "setup_aoa": 200000,
+      "setup_usd": 199
+    },
+    "group_label": "Ferramentas e desenvolvimento",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/domainskit.md"
+  },
+  {
+    "id": "emissor",
+    "name": "EMISSOR — Notas SaaS",
+    "file": "EMISSOR-notas-SaaS.zip",
+    "drive": "174phJwEiDPICyNF5YnMIpmPamvYR4nCd",
+    "group": "enterprise",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Pacote descrito como SaaS para emissão/gestão de notas. Não presumir conformidade fiscal: validar regras da AGT, integração e requisitos legais em Angola.",
+    "audience": "Empresas que precisam emitir documentos comerciais/fiscais, apenas após validação legal e técnica.",
+    "lookup": "EMISSOR notas SaaS PHP script",
+    "drive_url": "https://drive.google.com/file/d/174phJwEiDPICyNF5YnMIpmPamvYR4nCd/view",
+    "pricing": {
+      "aoa": [
+        30000,
+        80000,
+        180000
+      ],
+      "usd": [
+        29,
+        79,
+        179
+      ],
+      "setup_aoa": 750000,
+      "setup_usd": 749
+    },
+    "group_label": "ERP e operações empresariais",
+    "marketplace_lookup": "https://codecanyon.net/search/EMISSOR%20notas%20SaaS%20PHP%20script",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "BLOQUEADO até validar regras da AGT e requisitos fiscais aplicáveis em Angola.",
+    "doc": "03-suporte-e-operacoes/emissor.md"
+  },
+  {
+    "id": "eshop",
+    "name": "eShop v4.3.0 — Single Vendor eCommerce Flutter App",
+    "file": "eShop v4.3.0 - eCommerce Single Vendor App - Shopping eCommerce App with Flutter.zip",
+    "drive": "1hdNZq0g7YEa-ja_hcmqwWRu-uzqQ4fbd",
+    "group": "commerce",
+    "folder": "02-comercio-e-logistica",
+    "summary": "Aplicação Flutter para loja online de um único vendedor, com componentes web/API indicados pela listagem do fornecedor; validar versão e funcionalidades do arquivo.",
+    "audience": "Lojas e marcas que querem vender produtos num canal web/móvel.",
+    "official": "https://codecanyon.net/item/eshop-flutter-ecommerce-full-app/29880351",
+    "official_label": "Listagem CodeCanyon eShop; confirmar a versão antiga do arquivo e a licença.",
+    "drive_url": "https://drive.google.com/file/d/1hdNZq0g7YEa-ja_hcmqwWRu-uzqQ4fbd/view",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        125000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comércio e logística",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "02-comercio-e-logistica/eshop.md"
+  },
+  {
+    "id": "ewallet",
+    "name": "eWallet v3.0 — PHP Script",
+    "file": "eWallet v3.0 - PHP Script.zip",
+    "drive": "1XJr1Fa1sTRl_BNk0pm1hYHdA1R2U29MR",
+    "group": "regulated",
+    "folder": "06-comunidade-financas-media",
+    "summary": "Pacote descrito como script de carteira digital. Não o anunciar como serviço financeiro até validar custódia, pagamentos, KYC/AML, segurança e autorização regulatória.",
+    "audience": "Fintechs e empresas de pagamentos, somente após revisão jurídica, de segurança e de parceiros de pagamento.",
+    "lookup": "eWallet v3.0 PHP Script CodeCanyon",
+    "drive_url": "https://drive.google.com/file/d/1XJr1Fa1sTRl_BNk0pm1hYHdA1R2U29MR/view",
+    "pricing": {
+      "aoa": [
+        25000,
+        75000,
+        200000
+      ],
+      "usd": [
+        25,
+        75,
+        199
+      ],
+      "setup_aoa": 750000,
+      "setup_usd": 749
+    },
+    "group_label": "Produtos sujeitos a revisão regulatória",
+    "marketplace_lookup": "https://codecanyon.net/search/eWallet%20v3.0%20PHP%20Script%20CodeCanyon",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "BLOQUEADO PARA PUBLICAÇÃO COMERCIAL até revisão jurídica, regulatória, segurança e licença.",
+    "doc": "06-comunidade-financas-media/ewallet.md"
+  },
+  {
+    "id": "foodking",
+    "name": "FoodKing v1.9",
+    "file": "foodking_v1.9.zip",
+    "drive": "1Q440TOnI7KIUuHWCuO1r6THxMcE_4J4A",
+    "group": "commerce",
+    "folder": "02-comercio-e-logistica",
+    "summary": "Sistema de pedidos e entrega de refeições/restaurante; a listagem do fornecedor associa FoodKing a painel, app de entregas e POS. Confirmar a versão v1.9, muito anterior à página atual.",
+    "audience": "Restaurantes, grupos de restauração e operadores de entrega local.",
+    "official": "https://codecanyon.net/item/foodking-restaurant-food-delivery-system-with-admin-panel-delivery-man-app-restaurant-pos/45845092",
+    "official_label": "Listagem CodeCanyon do FoodKing atual; não garante correspondência com o arquivo v1.9.",
+    "drive_url": "https://drive.google.com/file/d/1Q440TOnI7KIUuHWCuO1r6THxMcE_4J4A/view",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        125000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comércio e logística",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "02-comercio-e-logistica/foodking.md"
+  },
+  {
+    "id": "foodyman-deliveryboy",
+    "name": "Foodyman — Delivery Boy App",
+    "file": "foodyman_deliveryboy.zip",
+    "drive": "1hJgKmANpYOUuz1Ycnx5oRuXd0K-Nnf-a",
+    "group": "commerce",
+    "folder": "02-comercio-e-logistica",
+    "summary": "App auxiliar para entregadores associado à família Foodyman; tratar como módulo complementar e confirmar compatibilidade com o pacote principal.",
+    "audience": "Operadores de entregas e restaurantes que já usam a plataforma Foodyman.",
+    "official": "https://codecanyon.net/item/foodyman-food-and-grocery-ordering-and-delivery-marketplace-website-customer-app-iosandroid/43679000",
+    "official_label": "Página do produto Foodyman principal; verificar se inclui este app e se a licença é separada.",
+    "drive_url": "https://drive.google.com/file/d/1hJgKmANpYOUuz1Ycnx5oRuXd0K-Nnf-a/view",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        125000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comércio e logística",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "02-comercio-e-logistica/foodyman-deliveryboy.md"
+  },
+  {
+    "id": "foodyman-main",
+    "name": "Foodyman v2023-10",
+    "file": "foodyman_v2023-10.zip",
+    "drive": "1s-1AghSiZn7Avr96bLyNzqYFTGsHvP8h",
+    "group": "commerce",
+    "folder": "02-comercio-e-logistica",
+    "summary": "Plataforma de pedidos e entrega multi-restaurante/mercearia, conforme o nome; a listagem atual do fornecedor descreve website, apps, painel de vendedor e administração. Validar a versão 2023-10.",
+    "audience": "Marketplaces locais de restaurantes, mercearias e operadores de entrega.",
+    "official": "https://codecanyon.net/item/foodyman-food-and-grocery-ordering-and-delivery-marketplace-website-customer-app-iosandroid/43679000",
+    "official_label": "Listagem CodeCanyon de Foodyman; confirmar versão e licença.",
+    "drive_url": "https://drive.google.com/file/d/1s-1AghSiZn7Avr96bLyNzqYFTGsHvP8h/view",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        125000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comércio e logística",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "02-comercio-e-logistica/foodyman-main.md"
+  },
+  {
+    "id": "foodyman-vendor-copy",
+    "name": "Foodyman — Vendor App (cópia 1)",
+    "file": "foodyman_vendor (1).zip",
+    "drive": "1gKlxxjNW2IEB9CyLQSCT8XpiHljFuRZ6",
+    "group": "commerce",
+    "folder": "02-comercio-e-logistica",
+    "summary": "Arquivo de app/painel de vendedor Foodyman. O Drive contém outro arquivo de mesmo tamanho e nome muito semelhante; comparar checksums para confirmar se é duplicado.",
+    "audience": "Lojistas que participam de um marketplace Foodyman.",
+    "official": "https://codecanyon.net/item/foodyman-food-and-grocery-ordering-and-delivery-marketplace-website-customer-app-iosandroid/43679000",
+    "official_label": "Página do produto principal; confirmar módulo e licença.",
+    "drive_url": "https://drive.google.com/file/d/1gKlxxjNW2IEB9CyLQSCT8XpiHljFuRZ6/view",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        125000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comércio e logística",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "Confirmar se é duplicado e se o módulo está coberto pela licença do produto principal.",
+    "doc": "02-comercio-e-logistica/foodyman-vendor-copy.md"
+  },
+  {
+    "id": "foodyman-vendor",
+    "name": "Foodyman — Vendor App",
+    "file": "foodyman_vendor.zip",
+    "drive": "13dzpBAf0fptViKcejqg1KSIkCv8WPe9p",
+    "group": "commerce",
+    "folder": "02-comercio-e-logistica",
+    "summary": "Arquivo de app/painel de vendedor Foodyman. O Drive também tem uma cópia com sufixo “(1)”; comparar checksums antes de manter ambos.",
+    "audience": "Lojistas que participam de um marketplace Foodyman.",
+    "official": "https://codecanyon.net/item/foodyman-food-and-grocery-ordering-and-delivery-marketplace-website-customer-app-iosandroid/43679000",
+    "official_label": "Página do produto principal; confirmar módulo e licença.",
+    "drive_url": "https://drive.google.com/file/d/13dzpBAf0fptViKcejqg1KSIkCv8WPe9p/view",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        125000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comércio e logística",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "Confirmar se é duplicado e se o módulo está coberto pela licença do produto principal.",
+    "doc": "02-comercio-e-logistica/foodyman-vendor.md"
+  },
+  {
+    "id": "hesk",
+    "name": "HESK 3 v3.4.5",
+    "file": "HESK 3 PHP Script v3.4.5.zip",
+    "drive": "1Ipv3YP-MN6IPpGVLiYL6fqd5jmNIH0Bv",
+    "group": "support",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Sistema de help desk/tickets de suporte. Confirmar versão, origem e licença do ZIP; HESK também publica opções oficiais gratuitas e comerciais.",
+    "audience": "Pequenas e médias empresas com equipa de atendimento.",
+    "official": "https://www.hesk.com/",
+    "official_label": "Site oficial do HESK.",
+    "drive_url": "https://drive.google.com/file/d/1Ipv3YP-MN6IPpGVLiYL6fqd5jmNIH0Bv/view",
+    "pricing": {
+      "aoa": [
+        8000,
+        25000,
+        60000
+      ],
+      "usd": [
+        8,
+        25,
+        59
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "group_label": "Suporte e help desk",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/hesk.md"
+  },
+  {
+    "id": "knowledge-base",
+    "name": "Knowledge Base PHP Script v1.0",
+    "file": "Knowledge Base PHP Script v1.0.zip",
+    "drive": "1CYvgyAe_V1BA4-2d3IihHxGL0EIENibR",
+    "group": "support",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Script para base de conhecimento/central de artigos, conforme o nome do arquivo; recursos e tecnologia devem ser confirmados na documentação.",
+    "audience": "Empresas que querem reduzir perguntas repetidas e publicar guias de ajuda.",
+    "lookup": "Knowledge Base PHP Script v1.0 CodeCanyon",
+    "drive_url": "https://drive.google.com/file/d/1CYvgyAe_V1BA4-2d3IihHxGL0EIENibR/view",
+    "pricing": {
+      "aoa": [
+        8000,
+        25000,
+        60000
+      ],
+      "usd": [
+        8,
+        25,
+        59
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "group_label": "Suporte e help desk",
+    "marketplace_lookup": "https://codecanyon.net/search/Knowledge%20Base%20PHP%20Script%20v1.0%20CodeCanyon",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/knowledge-base.md"
+  },
+  {
+    "id": "licensebox",
+    "name": "LicenseBox v1.5.2",
+    "file": "LicenseBox v1.5.2 – PHP License and Updates Manager Script.zip",
+    "drive": "1Y5m2asqYvZQCCEP6IfVOSbNfe7WhrRPC",
+    "group": "utility",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Gestor de licenças e atualizações para produtos PHP; o fornecedor descreve integração para validar licenças e distribuir atualizações.",
+    "audience": "Equipas que desenvolvem e mantêm os seus próprios produtos PHP.",
+    "official": "https://codecanyon.net/item/licensebox-php-license-and-updates-manager/22351237",
+    "official_label": "Listagem CodeCanyon de LicenseBox; conferir a licença original.",
+    "drive_url": "https://drive.google.com/file/d/1Y5m2asqYvZQCCEP6IfVOSbNfe7WhrRPC/view",
+    "pricing": {
+      "aoa": [
+        10000,
+        25000,
+        60000
+      ],
+      "usd": [
+        10,
+        25,
+        59
+      ],
+      "setup_aoa": 200000,
+      "setup_usd": 199
+    },
+    "group_label": "Ferramentas e desenvolvimento",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/licensebox.md"
+  },
+  {
+    "id": "linkdrop",
+    "name": "Linkdrop v2.3.0",
+    "file": "linkdrop-v2.3.0-extrair.zip",
+    "drive": "1fCyFWJlwv6OAlZwtYRmPxWVIVE7C5mnN",
+    "group": "marketing",
+    "folder": "05-marketing-analytics",
+    "summary": "O nome sugere uma ferramenta de links, mas não é suficiente para confirmar funcionalidades, público ou modelo de negócio; revisar o README/demo do pacote antes de anunciar.",
+    "audience": "A definir após inspeção da documentação do produto.",
+    "lookup": "Linkdrop v2.3.0 PHP script",
+    "drive_url": "https://drive.google.com/file/d/1fCyFWJlwv6OAlZwtYRmPxWVIVE7C5mnN/view",
+    "pricing": {
+      "aoa": [
+        10000,
+        30000,
+        75000
+      ],
+      "usd": [
+        10,
+        29,
+        75
+      ],
+      "setup_aoa": 200000,
+      "setup_usd": 199
+    },
+    "group_label": "Marketing e aquisição",
+    "marketplace_lookup": "https://codecanyon.net/search/Linkdrop%20v2.3.0%20PHP%20script",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "05-marketing-analytics/linkdrop.md"
+  },
+  {
+    "id": "linkedin-extractor",
+    "name": "LinkedIn Extream Premium v1.4.2",
+    "file": "LinkedIn Extream Premium v1.4.2 Full Activated - LinkedIn Data Extractor - WwW.Dr-FarFar.CoM.zip",
+    "drive": "1rC3rka7qcAPQlyjgU8coduCknHt8bzT1",
+    "group": "regulated",
+    "folder": "05-marketing-analytics",
+    "summary": "Arquivo descrito como extrator de dados do LinkedIn. O próprio nome contém “Full Activated” e um domínio de terceiros; não comercializar nem executar até verificar licença, integridade, segurança e conformidade com termos/privacidade.",
+    "audience": "Sem público comercial definido enquanto a revisão de licença e privacidade estiver pendente.",
+    "lookup": "LinkedIn Extream Premium LinkedIn Data Extractor PHP",
+    "drive_url": "https://drive.google.com/file/d/1rC3rka7qcAPQlyjgU8coduCknHt8bzT1/view",
+    "pricing": {
+      "aoa": [
+        25000,
+        75000,
+        200000
+      ],
+      "usd": [
+        25,
+        75,
+        199
+      ],
+      "setup_aoa": 750000,
+      "setup_usd": 749
+    },
+    "group_label": "Produtos sujeitos a revisão regulatória",
+    "marketplace_lookup": "https://codecanyon.net/search/LinkedIn%20Extream%20Premium%20LinkedIn%20Data%20Extractor%20PHP",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "BLOQUEADO PARA PUBLICAÇÃO COMERCIAL até revisão jurídica, regulatória, segurança e licença.",
+    "doc": "05-marketing-analytics/linkedin-extractor.md"
+  },
+  {
+    "id": "m-store",
+    "name": "M-Store v1.0 — Multi-Store Inventory",
+    "file": "M-Store v1.0  Multi-Store Inventory Management System with Full Accounts and installment Sale.zip",
+    "drive": "1AVi4oXOGzfzJk6g1R-nN3MMaUkse5aKL",
+    "group": "enterprise",
+    "folder": "02-comercio-e-logistica",
+    "summary": "Sistema multi-loja de inventário, contas e vendas a prestações; o fornecedor descreve gestão empresarial e faturação. Confirmar versão/licença.",
+    "audience": "Retalhistas e empresas com várias lojas ou vendas parceladas.",
+    "official": "https://codecanyon.net/item/mstore-multistore-inventory-management-system-with-full-accounts-and-installment-sale/22891251",
+    "official_label": "Listagem CodeCanyon de M-Store.",
+    "drive_url": "https://drive.google.com/file/d/1AVi4oXOGzfzJk6g1R-nN3MMaUkse5aKL/view",
+    "pricing": {
+      "aoa": [
+        30000,
+        80000,
+        180000
+      ],
+      "usd": [
+        29,
+        79,
+        179
+      ],
+      "setup_aoa": 750000,
+      "setup_usd": 749
+    },
+    "group_label": "ERP e operações empresariais",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "02-comercio-e-logistica/m-store.md"
+  },
+  {
+    "id": "mlmlab",
+    "name": "MLMLab v2.2 — Multilevel Marketing Platform",
+    "file": "MLMLab v2.2 – Multilevel Marketing Platform PHP Script.zip",
+    "drive": "1aQg3Sm7mgfuYZt1fjXw9gSRSTseRy0J9",
+    "group": "regulated",
+    "folder": "05-marketing-analytics",
+    "summary": "Plataforma de gestão de marketing multinível. Verificar regras de proteção ao consumidor e legislação local; não promover esquemas piramidais ou promessas de rendimento.",
+    "audience": "Empresas de venda direta que operem com produtos/serviços reais e conformidade jurídica.",
+    "official": "https://codecanyon.net/item/mlmlab-multilevel-marketing-platform/31801518",
+    "official_label": "Listagem CodeCanyon de MLMLab.",
+    "drive_url": "https://drive.google.com/file/d/1aQg3Sm7mgfuYZt1fjXw9gSRSTseRy0J9/view",
+    "pricing": {
+      "aoa": [
+        25000,
+        75000,
+        200000
+      ],
+      "usd": [
+        25,
+        75,
+        199
+      ],
+      "setup_aoa": 750000,
+      "setup_usd": 749
+    },
+    "group_label": "Produtos sujeitos a revisão regulatória",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "BLOQUEADO PARA PUBLICAÇÃO COMERCIAL até revisão jurídica, regulatória, segurança e licença.",
+    "doc": "05-marketing-analytics/mlmlab.md"
+  },
+  {
+    "id": "nftbox",
+    "name": "NFTBOX v1.4.6 — NFT Marketplace",
+    "file": "NFTBOX v1.4.6 - NFT Marketplace Script PHP.zip",
+    "drive": "1_GnVc42W4BzHgyAc10CNzwN0Ru6IVk3r",
+    "group": "regulated",
+    "folder": "06-comunidade-financas-media",
+    "summary": "Script PHP descrito como marketplace de NFT. Confirmar blockchain, carteira, contratos inteligentes, segurança e requisitos regulatórios antes de operar.",
+    "audience": "Equipas de ativos digitais que tenham revisão jurídica e técnica concluída.",
+    "official": "https://codecanyon.net/item/nftbox-nft-marketplace-script/38375099",
+    "official_label": "Listagem CodeCanyon de NFTBOX.",
+    "drive_url": "https://drive.google.com/file/d/1_GnVc42W4BzHgyAc10CNzwN0Ru6IVk3r/view",
+    "pricing": {
+      "aoa": [
+        25000,
+        75000,
+        200000
+      ],
+      "usd": [
+        25,
+        75,
+        199
+      ],
+      "setup_aoa": 750000,
+      "setup_usd": 749
+    },
+    "group_label": "Produtos sujeitos a revisão regulatória",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "BLOQUEADO PARA PUBLICAÇÃO COMERCIAL até revisão jurídica, regulatória, segurança e licença.",
+    "doc": "06-comunidade-financas-media/nftbox.md"
+  },
+  {
+    "id": "openai-writing-saas",
+    "name": "OpenAI ChatGPT Online Writing Tool as SaaS v1.0",
+    "file": "OpenAI ChatGPT Online Writing Tool as SaaS Aplicativo v1.0.zip",
+    "drive": "1Ma_8awVFJ8fHeaj_GzeXyjHGw3-1DQIe",
+    "group": "ai",
+    "folder": "01-ia-e-conteudo",
+    "summary": "Script de escrita online descrito como SaaS com OpenAI/ChatGPT. Confirmar compatibilidade atual da API, custos por uso, políticas de conteúdo e suporte a modelos.",
+    "audience": "Agências, criadores de conteúdo e pequenas empresas que precisam de ferramentas de escrita assistida.",
+    "lookup": "OpenAI ChatGPT Online Writing Tool as SaaS PHP script",
+    "drive_url": "https://drive.google.com/file/d/1Ma_8awVFJ8fHeaj_GzeXyjHGw3-1DQIe/view",
+    "pricing": {
+      "aoa": [
+        7500,
+        25000,
+        70000
+      ],
+      "usd": [
+        8,
+        25,
+        69
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "group_label": "IA e conteúdo",
+    "marketplace_lookup": "https://codecanyon.net/search/OpenAI%20ChatGPT%20Online%20Writing%20Tool%20as%20SaaS%20PHP%20script",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "01-ia-e-conteudo/openai-writing-saas.md"
+  },
+  {
+    "id": "rafflepress",
+    "name": "RafflePress Pro v1.12.15",
+    "file": "rafflepress-pro_v1.12.15.zip",
+    "drive": "1kxjmD1Ka_6So_pfnXZpDCnUahAoynCEz",
+    "group": "marketing",
+    "folder": "05-marketing-analytics",
+    "summary": "Plugin WordPress para campanhas/sorteios promocionais. Confirmar licença Pro, origem do ZIP e regras locais para concursos/sorteios.",
+    "audience": "Marcas e lojas que fazem campanhas promocionais, sujeito a regras legais.",
+    "official": "https://rafflepress.com/",
+    "official_label": "Site oficial RafflePress; conferir se esta versão corresponde à licença comprada.",
+    "drive_url": "https://drive.google.com/file/d/1kxjmD1Ka_6So_pfnXZpDCnUahAoynCEz/view",
+    "pricing": {
+      "aoa": [
+        10000,
+        30000,
+        75000
+      ],
+      "usd": [
+        10,
+        29,
+        75
+      ],
+      "setup_aoa": 200000,
+      "setup_usd": 199
+    },
+    "group_label": "Marketing e aquisição",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "Confirmar licença e regras locais de promoções/sorteios antes de anunciar.",
+    "doc": "05-marketing-analytics/rafflepress.md"
+  },
+  {
+    "id": "erp",
+    "name": "Sistema ERP v2",
+    "file": "Sistema ERP v2-20240629T025433Z-001.zip",
+    "drive": "11dr2cJ-QzUqUGAA0dwYP8mD3OCUeTpji",
+    "group": "enterprise",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Pacote identificado apenas como ERP v2. Módulos, integrações, fornecedor e requisitos fiscais não podem ser confirmados pelo nome do arquivo.",
+    "audience": "A definir após inventário dos módulos e testes.",
+    "lookup": "Sistema ERP v2 PHP script",
+    "drive_url": "https://drive.google.com/file/d/11dr2cJ-QzUqUGAA0dwYP8mD3OCUeTpji/view",
+    "pricing": {
+      "aoa": [
+        30000,
+        80000,
+        180000
+      ],
+      "usd": [
+        29,
+        79,
+        179
+      ],
+      "setup_aoa": 750000,
+      "setup_usd": 749
+    },
+    "group_label": "ERP e operações empresariais",
+    "marketplace_lookup": "https://codecanyon.net/search/Sistema%20ERP%20v2%20PHP%20script",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/erp.md"
+  },
+  {
+    "id": "sofdesk",
+    "name": "SofDesk v1.4 — Support Ticket & Knowledge Base",
+    "file": "SofDesk v1.4  Support Ticket and Knowledge base script.zip",
+    "drive": "1i__HdbgNkUUGHgvcUnWz_6CTt11dXgl9",
+    "group": "support",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Sistema de tickets e base de conhecimento, conforme o título do arquivo; confirmar canais, automações e requisitos técnicos na documentação.",
+    "audience": "Pequenas equipas de suporte e prestadores de serviços.",
+    "lookup": "SofDesk v1.4 Support Ticket Knowledge Base PHP",
+    "drive_url": "https://drive.google.com/file/d/1i__HdbgNkUUGHgvcUnWz_6CTt11dXgl9/view",
+    "pricing": {
+      "aoa": [
+        8000,
+        25000,
+        60000
+      ],
+      "usd": [
+        8,
+        25,
+        59
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "group_label": "Suporte e help desk",
+    "marketplace_lookup": "https://codecanyon.net/search/SofDesk%20v1.4%20Support%20Ticket%20Knowledge%20Base%20PHP",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/sofdesk.md"
+  },
+  {
+    "id": "ultimatedesk",
+    "name": "UltimateDesk v1.2 — Support Ticket, Knowledge Base & FAQ",
+    "file": "UltimateDesk v1.2 - Support Ticket System with Knowledge Base & FAQ.zip",
+    "drive": "1tyL117nyv5_BJ7tOjQ45BahZUgQiPN1s",
+    "group": "support",
+    "folder": "03-suporte-e-operacoes",
+    "summary": "Sistema de tickets de suporte com base de conhecimento e FAQ; a listagem CodeCanyon descreve gestão de tickets, artigos e agentes. A versão do arquivo é antiga; confirmar compatibilidade.",
+    "audience": "Pequenas empresas e agências que precisam gerir pedidos de suporte.",
+    "lookup": "UltimateDesk Support Ticket System Knowledge Base FAQ",
+    "drive_url": "https://drive.google.com/file/d/1tyL117nyv5_BJ7tOjQ45BahZUgQiPN1s/view",
+    "pricing": {
+      "aoa": [
+        8000,
+        25000,
+        60000
+      ],
+      "usd": [
+        8,
+        25,
+        59
+      ],
+      "setup_aoa": 150000,
+      "setup_usd": 149
+    },
+    "group_label": "Suporte e help desk",
+    "marketplace_lookup": "https://codecanyon.net/search/UltimateDesk%20Support%20Ticket%20System%20Knowledge%20Base%20FAQ",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "03-suporte-e-operacoes/ultimatedesk.md"
+  },
+  {
+    "id": "vizmo",
+    "name": "Vizmo v1.0 — Simple Video Hosting",
+    "file": "Vizmo v1.0 - Simple Video Hosting Script PHP.zip",
+    "drive": "10YdG4_MNCewpJGafSxUxg3ntr5MM2l9j",
+    "group": "media",
+    "folder": "06-comunidade-financas-media",
+    "summary": "Script PHP descrito como alojamento simples de vídeo. Validar limites de armazenamento, largura de banda, direitos de conteúdo e segurança antes de estimar custos.",
+    "audience": "Criadores e organizações que precisam publicar vídeos próprios.",
+    "lookup": "Vizmo v1.0 Simple Video Hosting Script PHP",
+    "drive_url": "https://drive.google.com/file/d/10YdG4_MNCewpJGafSxUxg3ntr5MM2l9j/view",
+    "pricing": {
+      "aoa": [
+        15000,
+        40000,
+        100000
+      ],
+      "usd": [
+        15,
+        39,
+        99
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Vídeo e media",
+    "marketplace_lookup": "https://codecanyon.net/search/Vizmo%20v1.0%20Simple%20Video%20Hosting%20Script%20PHP",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "06-comunidade-financas-media/vizmo.md"
+  },
+  {
+    "id": "zapzap-delivery",
+    "name": "ZAPZAP Delivery — Código Update 9",
+    "file": "ZAPZAP_DELIVERY_CODIGO_UPDATE_9-220423.rar",
+    "drive": "1VR5qLEfjGcLG6Byhj7cklrPOqe1Uqhrp",
+    "group": "commerce",
+    "folder": "02-comercio-e-logistica",
+    "summary": "Arquivo RAR grande identificado como código de sistema de delivery/entregas; verificar fornecedor, formato, versão, licença, segurança e conteúdo antes de promover. Acesso pelo Drive; não foi possível descarregar neste ambiente por exceder 100 MiB.",
+    "audience": "Restaurantes ou operadores locais de entrega, após inspeção e validação da licença.",
+    "lookup": "ZAPZAP Delivery código fonte sistema de delivery",
+    "drive_url": "https://drive.google.com/file/d/1VR5qLEfjGcLG6Byhj7cklrPOqe1Uqhrp/view",
+    "pricing": {
+      "aoa": [
+        20000,
+        50000,
+        125000
+      ],
+      "usd": [
+        19,
+        49,
+        119
+      ],
+      "setup_aoa": 500000,
+      "setup_usd": 499
+    },
+    "group_label": "Comércio e logística",
+    "marketplace_lookup": "https://codecanyon.net/search/ZAPZAP%20Delivery%20c%C3%B3digo%20fonte%20sistema%20de%20delivery",
+    "source_resale_price": "PENDENTE — confirmar licença original e direito de revender/redistribuir este produto.",
+    "publish_status": "RASCUNHO — validar a versão, funcionalidades, licença e custos de operação antes de publicar.",
+    "doc": "02-comercio-e-logistica/zapzap-delivery.md"
+  }
+]
