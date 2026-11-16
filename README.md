@@ -51,6 +51,10 @@ O repositório ainda contém `docker-compose.yml`, workflow n8n/Evolution e o gu
 - Publica condições de venda, privacidade, suporte e reembolso antes de vender.
 - Respeita a janela de atendimento e os modelos de mensagem exigidos pela Meta.
 
+## Catálogo de scripts SaaS (rascunho interno)
+
+O inventário dos 29 arquivos da pasta Drive, organizado por categoria, com links, descrições preliminares e propostas indicativas de assinatura está em [`catalogo-produtos/`](catalogo-produtos/README.md). As fichas não substituem a verificação das funcionalidades, licença, segurança e conformidade. Os preços são propostas para serviços SaaS hospedados, não preços oficiais nem preços de revenda do código. Os arquivos binários não foram adicionados ao repositório.
+
 ## Links
 
 - Site: https://kiazop-livros-whatsapp.vercel.app/
